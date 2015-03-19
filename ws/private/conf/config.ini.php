@@ -39,8 +39,8 @@ $_REQUEST=$_myarray;
 //********************************************//
 define("_dbhost_","localhost");
 define("_dbname_","lvseries");
-define("_dbuser_","lvseries2");
-define("_dbpassword_", "FPVXcfUFny8NnwUN"); 
+define("_dbuser_","root");
+define("_dbpassword_", ""); 
 define("_dbport_", "");
 define("_service_video_", 'http://10.10.16.85/ws/');
 

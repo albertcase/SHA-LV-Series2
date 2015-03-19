@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<root>
+  <look>
+	<id_imgs>01</id_imgs>
+	<titre><![CDATA[LOOK 1]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>02</id_imgs>
+	<titre><![CDATA[LOOK 2]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>03</id_imgs>
+	<titre><![CDATA[LOOK 3]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>04</id_imgs>
+	<titre><![CDATA[LOOK 4]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>05</id_imgs>
+	<titre><![CDATA[LOOK 5]]></titre>
+	<description><![CDATA[ADRIENNE 身着华达呢 Chelsea 夹克、针织衫与外缝线牛仔裤,搭配 Twist 酒红色撞色 Malletage 皮革手袋,浅棕色三文鱼皮 Monogram 花朵图案及踝靴。]]></description>
+  </look>
+  <look>
+	<id_imgs>06</id_imgs>
+	<titre><![CDATA[LOOK 6]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>07</id_imgs>
+	<titre><![CDATA[LOOK 7]]></titre>
+	<description><![CDATA[MICA 身着针织衫和外缝线七分长裤,搭配 Twist 棕色 Malletage 皮革手袋,金属与树脂耳坠以及全耳式金属流苏耳挂。]]></description>
+  </look>
+  <look>
+	<id_imgs>08</id_imgs>
+	<titre><![CDATA[LOOK 8]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>09</id_imgs>
+	<titre><![CDATA[LOOK 9]]></titre>
+	<description><![CDATA[JULIA 身着鳗鱼皮条纹连衣裙和针织衫,搭配 Twist 深灰色 Malletage 皮革手袋,金属与树脂耳坠,全耳式金属流苏耳挂以及牛仔拼贴 Monogram 花朵图案及踝靴。]]></description>
+  </look>
+  <look>
+	<id_imgs>10</id_imgs>
+	<titre><![CDATA[LOOK 10]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>11</id_imgs>
+	<titre><![CDATA[LOOK 11]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>12</id_imgs>
+	<titre><![CDATA[LOOK 12]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>13</id_imgs>
+	<titre><![CDATA[LOOK 13]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>14</id_imgs>
+	<titre><![CDATA[LOOK 14]]></titre>
+	<description><![CDATA[AMANDA 身着鳗鱼皮罩衫连衣裙,搭配 Twist 深青色 Épi 皮革手袋,搭配金属与树脂耳坠,全耳式金属流苏耳挂以及牛仔拼贴 Monogram 花朵图案及踝靴。]]></description>
+  </look>
+  <look>
+	<id_imgs>15</id_imgs>
+	<titre><![CDATA[LOOK 15]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>16</id_imgs>
+	<titre><![CDATA[LOOK 16]]></titre>
+	<description><![CDATA[ALBA 身着针织衫和贴纸印花短裙,搭配金属与树脂耳坠和全耳式金属流苏耳挂。]]></description>
+  </look>
+  <look>
+	<id_imgs>17</id_imgs>
+	<titre><![CDATA[LOOK 17]]></titre>
+	<description><![CDATA[LIYA 身着浪漫针织连衣裙,搭配金属与树脂耳坠,全耳式金属流苏耳挂,金属手链以及深蓝色鳗鱼皮 Monogram 花朵图案高跟及膝靴。]]></description>
+  </look>
+  <look>
+	<id_imgs>18</id_imgs>
+	<titre><![CDATA[LOOK 18]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>19</id_imgs>
+	<titre><![CDATA[LOOK 19]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>20</id_imgs>
+	<titre><![CDATA[LOOK 20]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>21</id_imgs>
+	<titre><![CDATA[LOOK 21]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>22</id_imgs>
+	<titre><![CDATA[LOOK 22]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>23</id_imgs>
+	<titre><![CDATA[LOOK 23]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+  <look>
+	<id_imgs>24</id_imgs>
+	<titre><![CDATA[LOOK 24]]></titre>
+	<description><![CDATA[LINE 身着浪漫针织连衣裙,搭配金属手链,黑色鳗鱼皮 Monogram 花朵图案高跟及膝靴。]]></description>
+  </look>
+    <look>
+	<id_imgs>25</id_imgs>
+	<titre><![CDATA[LOOK 25]]></titre>
+	<description><![CDATA[SORA 身着浪漫针织连衣裙,搭配 Dora 柔软压花皮革条纹手袋,酒红色鳗鱼皮 Monogram 花朵图案高跟及膝靴。]]></description>
+  </look>
+    <look>
+	<id_imgs>26</id_imgs>
+	<titre><![CDATA[LOOK 26]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>27</id_imgs>
+	<titre><![CDATA[LOOK 27]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>28</id_imgs>
+	<titre><![CDATA[LOOK 28]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>29</id_imgs>
+	<titre><![CDATA[LOOK 29]]></titre>
+	<description><![CDATA[ESMERALDA 身着真皮夹克和雕像印花刺绣连衣裙,搭配 Dora 翡翠绿鳄鱼皮手袋,金色金属与树脂耳坠,以及黑色鳗鱼皮 Monogram 花朵图案及踝靴。]]></description>
+  </look>
+    <look>
+	<id_imgs>30</id_imgs>
+	<titre><![CDATA[LOOK 30]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>31</id_imgs>
+	<titre><![CDATA[LOOK 31]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>32</id_imgs>
+	<titre><![CDATA[LOOK 32]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>33</id_imgs>
+	<titre><![CDATA[LOOK 33]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>34</id_imgs>
+	<titre><![CDATA[LOOK 34]]></titre>
+	<description><![CDATA[EMMY 身着鸵鸟式鳗鱼皮夹克、天鹅绒七分长裤与天鹅绒文胸,搭配 Petite-Malle 翡翠绿鳄鱼皮手袋,深棕色三文鱼皮 Monogram 花朵图案及踝靴以及金色金属与树脂耳坠。]]></description>
+  </look>
+    <look>
+	<id_imgs>35</id_imgs>
+	<titre><![CDATA[LOOK 35]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>36</id_imgs>
+	<titre><![CDATA[LOOK 36]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>37</id_imgs>
+	<titre><![CDATA[LOOK 37]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>38</id_imgs>
+	<titre><![CDATA[LOOK 38]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>39</id_imgs>
+	<titre><![CDATA[LOOK 39]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>40</id_imgs>
+	<titre><![CDATA[LOOK 40]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>41</id_imgs>
+	<titre><![CDATA[LOOK 41]]></titre>
+	<description><![CDATA[TAJA 身着墙纸印花天鹅绒连衣裙,搭配 Petite-Malle 樱桃红鳄鱼皮手袋,金属与树脂的耳坠和项链以及黑色鳗鱼皮 Monogram 花朵图案高跟及膝靴。]]></description>
+  </look>
+    <look>
+	<id_imgs>42</id_imgs>
+	<titre><![CDATA[LOOK 42]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>43</id_imgs>
+	<titre><![CDATA[LOOK 43]]></titre>
+	<description><![CDATA[OLYMPIA 身着天鹅绒文胸与天鹅绒七分长裤,搭配 Besace Ronde 小牛皮、麂皮与鳗鱼皮拼贴手袋,金属与树脂耳坠,全耳式金属流苏耳挂以及黑色鳗鱼皮 Monogram 花朵图案及踝靴。]]></description>
+  </look>
+    <look>
+	<id_imgs>44</id_imgs>
+	<titre><![CDATA[LOOK 44]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>45</id_imgs>
+	<titre><![CDATA[LOOK 45]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>46</id_imgs>
+	<titre><![CDATA[LOOK 46]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>47</id_imgs>
+	<titre><![CDATA[LOOK 47]]></titre>
+	<description><![CDATA[]]></description>
+  </look>
+    <look>
+	<id_imgs>48</id_imgs>
+	<titre><![CDATA[LOOK 48]]></titre>
+	<description><![CDATA[ANGEL 身着刺绣短袖,搭配金属与树脂耳坠和全耳式金属流苏耳挂。]]></description>
+  </look>
+  
+</root>

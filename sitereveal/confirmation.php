@@ -24,7 +24,7 @@ include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone
 			<?php include'menu.php';?>
 			<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $einvitations->img;?>" class="img-invitation"></a>
 			<div class="btn-invitation">
-				<a href="#" class="btn" id="save-wechat" data-ajax="false">立即前往</a>
+				<a href="http://j.map.baidu.com/jdsx0" class="btn" id="save-wechat" data-ajax="false">立即前往</a>
 				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->
 			</div>
 	</div>

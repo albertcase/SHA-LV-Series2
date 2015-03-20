@@ -201,7 +201,7 @@
 				</div>
 			</div>	
 		</section>
-		<div class="scrollTop"><img src="./images/scrollTop.png" /></div>
+		<div class="scrollTop"><!-- <img src="./images/scrollTop.png" /> --></div>
 	</div>
 
 </body>

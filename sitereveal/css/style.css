@@ -112,6 +112,11 @@ a{color: #FFF; text-decoration: none;}
 
 
 body.home, body.video { font-family: 'LVLight'; font-size: 18px; background-image: url('../images/background.jpg'); background-size: cover; color:#fff; margin: 0;}
+
+body.video{
+  background: #000;
+}
+
 .header-home { margin-top: 15%;}
 .home h1, .video h1{ text-transform: uppercase; font-size: 1.5em; color: white;  text-align: center;  margin: 0px;}
 .home h2, .video h2{ text-transform: uppercase; color: red; font-size: 2em; text-align: center;  margin: 0px;}

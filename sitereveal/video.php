@@ -1,3 +1,4 @@
+<?php include("php/teaser.php"); ?>
 <!DOCTYPE html> 
 <html>
 <head>
@@ -22,9 +23,6 @@
 		    
 
 		    
-
-
-
 			    //create a new instance of shake.js.
 			    var myShakeEvent = new Shake({
 			        threshold: 5
@@ -65,12 +63,15 @@
 
 		};
 	</script>	
+
 <div data-role="page" id="intro-video">
 	<header class="header-home">
 		<?php include'menu.php';?>
-
-		<h1><img src="images/logo.png" alt="louis-vuitton" id="logo-video"></h1>
+		<!-- <h1><img src="images/logo.png" alt="louis-vuitton"></h1> -->
 	</header>
+	<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: 10px auto; text-align:center; width:100%;" id="teaser-video">
+			<source src='<?php echo $myvideo; ?>' type='video/mp4' />
+	</video>
 	<div id="random-video-wrapper"></div>
 	<p class="text" id="shake-it-text"><img src="images/shakeshake-wechatwechat.png" /></p>
 	<p class="text" id="shake-it-again-text"><img src="images/shakeshake-wechatwechat2.png" /></p>
@@ -78,10 +79,10 @@
 		<a href="#visualisation">制作微视频</a>
 	</div>
 
-	<footer>
+	<!-- <footer>
 		<h2><img src="images/serie2.png" alt="serie2"></h2>
 		<span class="red">#路易威登系列二#</span>
-	</footer>
+	</footer> -->
 
 
 	
@@ -144,7 +145,14 @@
 </div>
 
 
-
+<script>
+	$(function(){
+		$(document).ready(function(){
+			$("#teaser-video").height($(window).height()*0.7);
+		});
+			
+	});
+</script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js?v=<?php echo uniqid(); ?>"></script>
 </head>
 
 <body class="video">
@@ -41,9 +41,8 @@
 
 			    	if($("#intro-video").hasClass("ui-page-active")){
 						var video_chemin ="";
-						$.get( "/ws/?act=random_video", function( data ) {
-						  //console.log(data);
-						  
+						$.get( "php/ws.php?rand=1", function( data ) {
+						  console.log(data);
 						  video_chemin=data.msg;
 						  
 						  $("#random-video-wrapper").html("<video width='100%' height='320' controls='controls' poster='images/video/placeholder-video.jpg' id='randomvideo' style='width:100%;'><source src='"+video_chemin+"' type='video/mp4' /></video>");
@@ -59,6 +58,7 @@
 			       }
 
 			    }
+
 
 
 			
@@ -98,24 +98,25 @@
 	<article>
 		<p>第一步：上传照片<br/>第二步：预览视频</p>
 	</article>
+
 	<section class="custom-photos">
 	<form id="form1" runat="server" method="post" enctype="multipart/form-data" action="/ws/" data-ajax="false"> 
 		<input type="hidden" name="act" value="upload_image"/>
 		<input type="hidden" name="dd" value="loc"/>
 		<div class="photos">
         	<input type='file' name="photo1" id="photo-1" class="file-photo" />
-			<input type="hidden" name="orientation_image1" id="orientation_image1"/>
-			<textarea name="base64_img1" id="base64_img1"></textarea>
+			<input type="hidden" name="orientation_image1" id="photo-1-orientation"/>
+			<textarea name="base64_img1" id="photo-1-img"></textarea>
 		</div>
 		<div class="photos">
         	<input type='file' name="photo2" id="photo-2" class="file-photo" />
-			<input type="hidden" name="orientation_image2" id="orientation_image2"/>
-			<textarea name="base64_img2" id="base64_img2"></textarea>
+			<input type="hidden" name="orientation_image2" id="photo-2-orientation"/>
+			<textarea name="base64_img2" id="photo-2-img"></textarea>
 		</div>
 		<div class="photos">
         	<input type='file' name="photo3" id="photo-3" class="file-photo" />
-			<input type="hidden" name="orientation_image3" id="orientation_image3" />
-			<textarea name="base64_img3" id="base64_img3"></textarea>
+			<input type="hidden" name="orientation_image3" id="photo-3-orientation"/>
+			<textarea name="base64_img3" id="photo-3-img"></textarea>
 		</div>
 	</form>
 	<a href="javascript:$('#form1').submit();" class="btn" id="preview-btn">制作视频</a>

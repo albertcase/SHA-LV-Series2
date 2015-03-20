@@ -7,7 +7,13 @@
  */
 
 (function($) {
+	var ua = navigator.userAgent.toLowerCase();
+	var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	if(isAndroid) {
+	//$(".file-photo").("opacity","1");
+	}
 	$(document).ready(function(){
+		var MAX_HEIGHT = 600;
 
 		/*** -------------------------------- 
 
@@ -69,69 +75,27 @@
 
 
 		function readURL(input) {
+			
 	        if (input.files && input.files[0]) {
-				$("#loader-video").show();
-	        	ID_VAR = $(input).attr("id");
-				var morientation=0;
-				var mtextarea=0;
-				if(ID_VAR=="photo-1"){morientation=$("#orientation_image1");mtextarea=$("#base64_img1");}
-				if(ID_VAR=="photo-2"){morientation=$("#orientation_image2");mtextarea=$("#base64_img2");}
-				if(ID_VAR=="photo-3"){morientation=$("#orientation_image3");mtextarea=$("#base64_img3");}
-				var img = document.createElement("img");
-	            var reader = new FileReader();
-				var cssRotate=0;
+			
+	        	var ID_VAR = $(input).attr("id");
 				
-	            reader.onloadend=function(d) {};
-	            
-	            reader.onload = function (e) {
-					 var img = new Image();
-					 img.src = e.target.result;
-					 
-					 
-					   EXIF.getData(input.files[0], function() {
-						var image_orientation=EXIF.getTag(this, "Orientation");
-						
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$("#loader-video").show();
+					var cssRotate=0;
+					EXIF.getData(input.files[0], function() {
+							var image_orientation=EXIF.getTag(this, "Orientation");
 							
-						
 							if(image_orientation==3)cssRotate=180;
 							if(image_orientation==6)cssRotate=90;
 							if(image_orientation==8)cssRotate=-90;
-						
-											 
-							 
-							 morientation.val(image_orientation);
-							 
-							 
 							
-							 //After save exif infos => compression
-							 var canvas = document.createElement('canvas');
-							 var ctx = canvas.getContext("2d");
-							 ctx.drawImage(img, 0, 0);
-							 var MAX_HEIGHT = 750;
-							 var MAX_WIDTH = 750;
-							 var width = img.width;
-							 var height = img.height;
-							 
-							 if (width > height) {
-								  if (width > MAX_WIDTH) {
-									height *= MAX_WIDTH / width;
-									width = MAX_WIDTH;
-								  }
-								} else {
-								  if (height > MAX_HEIGHT) {
-									width *= MAX_HEIGHT / height;
-									height = MAX_HEIGHT;
-								  }
-								}
-							canvas.width = width;
-							canvas.height = height;
-							var ctx = canvas.getContext("2d");
-							ctx.drawImage(img, 0, 0, width, height);
-							
-							var dataurl = canvas.toDataURL("image/jpeg",70);
+							$('#'+ID_VAR+"-orientation").val(image_orientation);
 							
 							$('#'+ID_VAR).parents(".photos").removeAttr('style');
-							$('#'+ID_VAR).parents(".photos").css('background-image', 'url('+dataurl+')'); 
+							$('#'+ID_VAR).parents(".photos").css('background-image', 'url('+e.target.result+')');
 							
 							$('#'+ID_VAR).parents(".photos").css({
 								  '-moz-transform':'rotate('+cssRotate+'deg)',
@@ -147,25 +111,46 @@
 								 $('#'+ID_VAR).parents(".photos").css("height","90px");
 								 $('#'+ID_VAR).parents(".photos").css("width", "90px");
 							 }
-							
-							mtextarea.val(dataurl);
-							//console.log(mtextarea.val());
-							$("#loader-video").hide();
+							 
+							 $("#loader-video").hide();
+						
 						
 						});
-					 
+						
+						render(e.target.result,ID_VAR);
+						
 					
-					//$('#'+ID_VAR+"-preview").attr('src', e.target.result);
-	            }
-	            
-	            reader.readAsDataURL(input.files[0]);
-				
-	        }
-	    }
+				}
+
+				reader.readAsDataURL(input.files[0]);
+         
+			}
+			return true;
+		}
 	    
 	    $(".file-photo").change(function(){
 	        readURL(this);
 	    });
+		
+		function render(src,mtarget){
+			var image = new Image();
+			image.onload = function(){
+				var canvas = document.createElement('canvas');
+				if(image.height > MAX_HEIGHT) {
+					image.width *= MAX_HEIGHT / image.height;
+					image.height = MAX_HEIGHT;
+				}
+				var ctx = canvas.getContext("2d");
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				canvas.width = image.width;
+				canvas.height = image.height;
+				ctx.drawImage(image, 0, 0, image.width, image.height);
+				var mbase64 = canvas.toDataURL("image/jpeg",0.6);
+				ctx=null;
+				$("#"+mtarget+"-img").val(mbase64);
+			};
+			image.src = src;
+		}
 
 
 	    /** Verification des videos **/
@@ -174,9 +159,9 @@
 			var photo_1 = $("#photo-1").val();
 			var photo_2 = $("#photo-2").val();
 			var photo_3 = $("#photo-3").val();
+			
 			if (photo_1 == '' || photo_2 == '' || photo_3 == '') {
-				
-				
+
 	    		e.preventDefault();
 
 	    		if(photo_1 == ''){ $("#photo-1").parents('.photos').addClass("error-photo");}else{ $("#photo-1").parents('.photos').removeClass("error-photo"); }
@@ -190,8 +175,6 @@
 				$("#loader-video").show();
 			}
 		});
-		
-
 
 	});
 

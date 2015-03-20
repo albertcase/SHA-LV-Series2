@@ -112,6 +112,11 @@ a{color: #FFF; text-decoration: none;}
 
 
 body.home, body.video { font-family: 'LVLight'; font-size: 18px; background-image: url('../images/background.jpg'); background-size: cover; color:#fff; margin: 0;}
+
+body.video{
+  background: #000;
+}
+
 .header-home { margin-top: 15%;}
 .home h1, .video h1{ text-transform: uppercase; font-size: 1.5em; color: white;  text-align: center;  margin: 0px;}
 .home h2, .video h2{ text-transform: uppercase; color: red; font-size: 2em; text-align: center;  margin: 0px;}
@@ -188,6 +193,7 @@ html{
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0 15px 15px 0;
 }
 
 
@@ -213,7 +219,50 @@ html{
 .video footer .red{text-align: center; font-size: 12px; margin: 3px auto;}
 .video #visualisation footer{margin-top: 25px;}
 
-.scrollTop{bottom: 0px;  position: fixed; text-align: center; width: 100%; z-index: 9999999; padding-bottom: 10px;}
+/*.scrollTop{bottom: 0px;  position: fixed; text-align: center; width: 100%; z-index: 9999999; padding-bottom: 10px;}
+*/
+
+.scrollTop{
+  width:30px;
+  height:50px;
+  background:url("../images/scrollTop.png") no-repeat center;
+  background-size: 100% auto;
+  position:fixed;
+  left:50%;
+  z-index: 99999;
+  bottom:1em;
+  margin: 0 0 0 -15px;
+}
+
+
+.scrollTop {
+  -webkit-animation: start 1.5s infinite ease-in-out;
+  -moz-animation: start 1.5s infinite ease-in-out;
+  animation: start 1.5s infinite ease-in-out;
+}
+
+
+
+/**
+* = animate 动画样式
+*******************************************************************************************************/
+/*箭头指示引导*/
+@-webkit-keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+
 
 /*******************************************************************
 
@@ -406,6 +455,7 @@ body.look {background: #FFF!important;}
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0 0 18px 0;
 }
 #mypanel #cross-panel img.img-panel{
   display: inline-block;
@@ -425,13 +475,22 @@ body.look {background: #FFF!important;}
 }
 #nav-panel li {
 border-top: 1px solid #171716;
-padding-top:10px; 
-padding-bottom:10px;
+/*padding-top:10px; 
+padding-bottom:10px;*/
+position: relative;
+height:38px;
+line-height: 45px;
 }
 
 #nav-panel li a {
   text-decoration: none;
   color: white;
+  width: 100%;
+  float: left;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top:0;
 }
 #nav-panel li:active {
 border-left: 1px solid #e70010;
@@ -458,9 +517,17 @@ border-right: 1px solid #e70010;
   display: inline;
   margin: 0 auto;
   padding: 5% 10% ;
+  position: relative;
   }
 #footer-panel li a{
-  padding: 5% 0 ;  
+  /*padding: 5% 0;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
 }
   #footer-panel li:nth-child(2){
     border-left: 1px solid #171716;
@@ -586,8 +653,8 @@ input[type='submit']{
   font-size: 14px;
   }
   #nav-panel li {
-  padding-top:15px; 
-  padding-bottom:10px;
+  /*padding-top:15px; 
+  padding-bottom:10px;*/
   }
   #footer-panel{
     padding-top: 11%;

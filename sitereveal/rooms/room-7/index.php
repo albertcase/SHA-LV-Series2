@@ -5,7 +5,7 @@
   	<title>后台 - Louis Vuitton</title>
   	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../../css/rooms.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -30,6 +30,7 @@
 <script type="text/javascript">scroller.auto();</script>
 <script type="text/javascript">
 $(function() {
+
     // $( "#dialog" ).dialog();
     $( "#dialog" ).delay(2200).fadeOut(600);
 
@@ -76,6 +77,8 @@ $(function() {
 
 
   });
+
+
 </script>
 </body>
 </html>

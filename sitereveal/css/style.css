@@ -193,6 +193,7 @@ html{
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0 15px 15px 0;
 }
 
 
@@ -454,6 +455,7 @@ body.look {background: #FFF!important;}
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0 0 18px 0;
 }
 #mypanel #cross-panel img.img-panel{
   display: inline-block;
@@ -473,13 +475,22 @@ body.look {background: #FFF!important;}
 }
 #nav-panel li {
 border-top: 1px solid #171716;
-padding-top:10px; 
-padding-bottom:10px;
+/*padding-top:10px; 
+padding-bottom:10px;*/
+position: relative;
+height:38px;
+line-height: 45px;
 }
 
 #nav-panel li a {
   text-decoration: none;
   color: white;
+  width: 100%;
+  float: left;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top:0;
 }
 #nav-panel li:active {
 border-left: 1px solid #e70010;
@@ -506,9 +517,17 @@ border-right: 1px solid #e70010;
   display: inline;
   margin: 0 auto;
   padding: 5% 10% ;
+  position: relative;
   }
 #footer-panel li a{
-  padding: 5% 0 ;  
+  /*padding: 5% 0;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
 }
   #footer-panel li:nth-child(2){
     border-left: 1px solid #171716;
@@ -634,8 +653,8 @@ input[type='submit']{
   font-size: 14px;
   }
   #nav-panel li {
-  padding-top:15px; 
-  padding-bottom:10px;
+  /*padding-top:15px; 
+  padding-bottom:10px;*/
   }
   #footer-panel{
     padding-top: 11%;

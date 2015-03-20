@@ -14,9 +14,9 @@
 		<li ><a href="rooms.php#nine" data-ajax="false"><span class="left">Space 9</span><span class="right">贴纸墙</span></a></li>
 	</ul>
 	<ul id="footer-panel">
-		<li><a href="collection.php" data-ajax="false">全部造型</a></li>
-		<li><a href="video.php" data-ajax="false">制作微视频</a></li>
-		<li><a href="invitation.php" data-ajax="false">邀请函</a></li>
+		<li><a href="collection.php" data-ajax="false"></a>全部造型</li>
+		<li><a href="video.php" data-ajax="false"></a>制作微视频</li>
+		<li><a href="invitation.php" data-ajax="false"></a>邀请函</li>
 	</ul>
 
 </div>

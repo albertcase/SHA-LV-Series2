@@ -136,7 +136,7 @@ $_SESSION['sharestatus']=1;
 <div data-role="page" id="preview">
 	<a class="back-btn" href="video.php" data-ajax="false">back</a>
 	<video width='250' height='360' id="finsh-video" controls='controls' poster='images/video/placeholder-video.jpg'><source src='<?php echo "".$_GET["mp4"];?>' type='video/mp4' /></video>
-	<p>独家视频已经制作完成！</p>
+	<p>独家视频已经制作完成!</p>
 	<?php if(strstr($_SERVER['HTTP_USER_AGENT'],'iPod') || strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') || strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
 	//on ne fait rien
 	}else{ ?>

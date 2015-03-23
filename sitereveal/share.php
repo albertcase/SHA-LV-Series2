@@ -18,13 +18,6 @@
 
 
 	<script type="text/javascript">
-	function GetQueryString(name){
-	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-	var r = window.location.search.substr(1).match(reg);
-	if(r!=null)return unescape(r[2]); return null;
-	}
-	alert(GetQueryString("a"))
-
 		window.onload = function() {
 
 			$(".layer-step5").on( "click", function(e) {

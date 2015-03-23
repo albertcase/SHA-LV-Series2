@@ -633,7 +633,9 @@ input[type='submit']{
 
 .invite_ticket{ margin: -69px 0 0 0; float: left; display: inline-block; }
 
-.ui-mobile .ui-page{ position: relative; z-index: 9999; }
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left{
+  left:21em;
+}
 
 @media (orientation: landscape) {
 /*  .container,

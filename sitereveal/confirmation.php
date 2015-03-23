@@ -1,9 +1,15 @@
 <?php
-if(!$_POST["act"]){
+session_start();
+if(!$_POST["act"]&&!isset($_GET["invite"])){
 header("Location:invitation.php");
 exit();
 }
-include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone"]; $einvitations = wsCall($_POST);
+if(isset($_GET["invite"]){
+	$img=$_SESSION["invite"];
+}else{
+	include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone"]; $einvitations = wsCall($_POST);
+	$_SESSION["invite"]=$img=$einvitations->img;
+}
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -25,10 +31,10 @@ include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone
 <body class="home confirmation">
 	<div data-role="page" id="guest">
 			<?php include'menu.php';?>
-			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $einvitations->img;?>" class="img-invitation"></a>
+			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $img;?>" class="img-invitation"></a>
 			<div class="btn-invitation">
 				<a href="baidumap/index.html" class="btn" id="save-wechat" data-ajax="false">立即前往</a>
-				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->
+				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->
 			</div>
 	</div>
 </body>

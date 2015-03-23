@@ -70,7 +70,7 @@ $_SESSION['sharestatus']=1;
 	</header>
 	
 	<div id="random-video-wrapper">
-		<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: -5% auto; text-align:center; width:100%;" id="teaser-video">
+		<video  controls='controls' poster='images/video/placeholder-video.jpg' width='100%' height='320' style='width:100%;' id="teaser-video">
 			<source src='<?php echo $myvideo; ?>' type='video/mp4' />
 		</video>
 	</div>

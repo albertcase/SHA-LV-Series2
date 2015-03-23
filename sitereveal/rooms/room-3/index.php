@@ -47,7 +47,7 @@ $(function() {
             $.mbAudio.sounds = {
                   backgroundMusic: {
               id    : "backgroundMusic",
-              acc   : "sounds/sound.acc",
+              mp3   : "sounds/sound.mp3",
               loop : true
             }
         };

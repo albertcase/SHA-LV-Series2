@@ -41,19 +41,19 @@
 		
 		<div class="slide">
 		<ul id="slider-stickers" class="bxslider">
-			<li><img src="images/sticker01.png"></li>
-			<li><img src="images/sticker02.png"></li>
-			<li><img src="images/sticker03.png"></li>
-			<li><img src="images/sticker04.png"></li>
-			<li><img src="images/sticker05.png"></li>
-			<li><img src="images/sticker06.png"></li>
-			<li><img src="images/sticker07.png"></li>
-			<li><img src="images/sticker08.png"></li>
-			<li><img src="images/sticker09.png"></li>
-			<li><img src="images/sticker10.png"></li>
-			<li><img src="images/sticker11.png"></li>
-			<li><img src="images/sticker12.png"></li>
-			<li><img src="images/sticker13.png"></li>
+			<li><img src="images/01.gif"></li>
+			<li><img src="images/02.gif"></li>
+			<li><img src="images/03.gif"></li>
+			<li><img src="images/04.gif"></li>
+			<li><img src="images/05.gif"></li>
+			<li><img src="images/06.gif"></li>
+			<li><img src="images/07.gif"></li>
+			<li><img src="images/08.gif"></li>
+			<li><img src="images/09.gif"></li>
+			<li><img src="images/10.gif"></li>
+			<li><img src="images/11.gif"></li>
+			<li><img src="images/12.gif"></li>
+			<li><img src="images/13.gif"></li>
 		</ul>
 		
 		</div>

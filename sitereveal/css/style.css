@@ -631,7 +631,7 @@ input[type='submit']{
 .btn-invitation{ width: 100%; height: 38px; margin: -80px 0 0 0; position: relative; z-index: 2; float: left; display: inline-block; text-align: center; background: black; }
 .btn-invitation .btn{text-align: center; display: inline-block; width: 45%; margin: 0 ;}
 
-.invite_ticket{ margin: -66px 0 0 0; float: left; display: inline-block; }
+.invite_ticket{ margin: -69px 0 0 0; float: left; display: inline-block; }
 
 .ui-mobile .ui-page{ position: relative; z-index: 9999; }
 

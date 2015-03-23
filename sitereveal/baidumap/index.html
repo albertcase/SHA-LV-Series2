@@ -55,22 +55,22 @@
 			text-align: center;
 			position: fixed;
 			left: 0;
-			bottom: 0;
+			bottom: 1px;
 			z-index: 102;
 			height: 38px;
 			line-height: 38px;
 		}
 
 		.map_reback_btn a{ 
-			  background-color: #000;
+			    display: block;
+				color: white;
+				line-height: 25px;
+				padding: 10px 0 4px;
+				text-decoration: none;
 			  border: 1px solid #636363;
-			  color: white;
-			  width: 54%;
-			  line-height: 20px;
-			  font-size: 90%;
-			  height: 38px;
-			  line-height: 38px;
-			  display: inline-block;
+			  width: 50%;
+			  margin: 0 auto;
+			  font-size: 13px;		
 		}
 
 
@@ -82,7 +82,8 @@
 	<div class="topic">
 		<img src="images/series2.png" width="30%">
 	</div>
-
-	<div class="map_reback_btn"><a href="../confirmation.php?invite=1">返 回</a></div>
+	<div class="map_reback_btn">
+				<a href="../confirmation.php?invite=1" class="btn" id="save-wechat" data-ajax="false">返 回</a>
+	</div>
 </body>
 </html>

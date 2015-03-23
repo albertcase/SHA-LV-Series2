@@ -15,6 +15,9 @@ include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
+	<style type="text/css">
+		#guest{ overflow: hidden; }
+	</style>
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

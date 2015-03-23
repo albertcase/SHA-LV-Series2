@@ -1,4 +1,6 @@
-<?php include("php/teaser.php"); ?>
+<?php include("php/teaser.php");
+$_SESSION['sharestatus']=1;
+?>
 <!DOCTYPE html> 
 <html>
 <head>
@@ -46,8 +48,7 @@
 						  document.getElementById('randomvideo').play();
 						  $('#shake-it-text').hide();
 						  $('#shake-it-again-text').show();
-						  $('#logo-video').hide();
-						  
+						  $('#logo-video').hide();			  
 						  
 						});
 
@@ -69,7 +70,7 @@
 	</header>
 	
 	<div id="random-video-wrapper">
-		<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: -5% auto; text-align:center; width:100%;" id="teaser-video">
+		<video  controls='controls' poster='images/video/placeholder-video.jpg' width='100%' height='320' style='width:100%;' id="teaser-video">
 			<source src='<?php echo $myvideo; ?>' type='video/mp4' />
 		</video>
 	</div>
@@ -140,7 +141,7 @@
 	}else{ ?>
 	<a href="php/down.php?fic=<?php echo urlencode(addslashes($_GET["mp4"]));?>" download="my_video.mp4" class="btn" id="download-btn" data-ajax="false">Download</a>
 	<?php } ?>
-	<a href="share.php?a=1" class="btn" data-ajax="false">立即分享</a>
+	<a href="share.php" class="btn" data-ajax="false">立即分享</a>
 	<a href="invitation.php" class="btn" data-ajax="false">申领邀请函</a>
 </div>
 
@@ -148,7 +149,7 @@
 <script>
 	$(function(){
 		$(document).ready(function(){
-			$("#teaser-video").height($(window).height()*0.7);
+			$("#teaser-video").height($(window).height()*0.57);
 		});
 			
 	});

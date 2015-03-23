@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['sharestatus'])){
+	$status=1;
+	unset($_SESSION['sharestatus']);
+}else{
+	$status=0;
+}
+?>
 <!DOCTYPE html> 
 <html>
 <head>
@@ -18,8 +27,14 @@
 
 
 	<script type="text/javascript">
+		
 		window.onload = function() {
-
+			var status='<?php echo $status;?>';
+			if(status==0){
+				$(".layer-step5").hide();
+			}else{
+				$(".layer-step5").show();
+			}
 			$(".layer-step5").on( "click", function(e) {
 				$(".layer-step5").hide();
 			});	

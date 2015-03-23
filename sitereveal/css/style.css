@@ -124,8 +124,8 @@ body.video{
 .nav-home{  list-style: none;  color: red;  text-align: center;  padding: 0;  margin: 0;}
 .nav-home li {  display: inline;  text-transform: uppercase;  padding: 3%;  text-decoration: underline;}
 
-.liens-home{  text-align: center;  bottom: 20%;  margin-top: 10%;  margin-bottom: 5%;}
-.liens-home a, .btn {  display: block;  color: white;  line-height: 25px; padding: 10px 0 4px;  text-decoration: none;  border: 1px solid #636363;  width: 50%;  margin:0 auto;  margin-top: 5%; font-size: 13px;}
+.liens-home{  text-align: center;  bottom: 20%;  margin-top: 6%;  margin-bottom: 5%;}
+.liens-home a, .btn {  display: block;  color: white;  line-height: 25px; padding: 10px 0 4px;  text-decoration: none;  border: 1px solid #636363;  width: 50%;  margin:0 auto;  margin-top: 2%; font-size: 13px;}
 .liens-home a:hover, .btn:hover{color: #000; background: #636363;}
 
 .liens-home.home-part a{padding: 4px 0 4px; }
@@ -134,6 +134,7 @@ body.video{
 
 .home  img, h2 img{  display: block;  width: 80%;  height: auto; margin: 0 auto;}
 .home h1 img, .video h1 img{width: 25%; margin: 10px auto; }
+
 
 #text, .text{
   width: 70%;
@@ -413,7 +414,7 @@ body.look {background: #FFF!important;}
 
 #random-video-wrapper video{display: block; opacity: 1;}
 
-#intro-video{padding-bottom: 280px; overflow: auto;}
+#intro-video{/*padding-bottom: 280px; */ overflow: auto;}
 #intro-video video{width: 202px; margin: 0 auto;}
 
 #shake-it-again-text{display: none;}
@@ -541,7 +542,7 @@ border-right: 1px solid #e70010;
     margin: 0 auto;
   }
 
-.layer-step5{background: url(../images/layer.png) no-repeat center top; background-size: 100% auto; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000000; }
+.layer-step5{background: url(../images/layer.png) no-repeat center top; background-size: 100% auto; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000000; display: none; }
 /*******************************************************************
 
                 6 - invitation
@@ -631,7 +632,7 @@ input[type='submit']{
 .btn-invitation{ width: 100%; height: 38px; margin: -80px 0 0 0; position: relative; z-index: 2; float: left; display: inline-block; text-align: center; background: black; }
 .btn-invitation .btn{text-align: center; display: inline-block; width: 45%; margin: 0 ;}
 
-.invite_ticket{ margin: -76px 0 0 0; float: left; display: inline-block; }
+.invite_ticket{ margin: -79px 0 0 0; float: left; display: inline-block; }
 
 .ui-panel-dismiss-open.ui-panel-dismiss-position-left{
   left:21em;

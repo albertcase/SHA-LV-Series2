@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			background-color: #030303; 
+		}
+		#golist {
+			display: block;
+		}
+		#iframe {
+			border: none;
+			overflow:auto;
+			overflow-x: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+		.topic {
+			/*background-color: #030303;*/ 
+			width: 100%;
+			height:auto;
+			text-align: center;
+			position: fixed;
+			z-index: 100;
+			bottom: 0;
+			left: 0;
+			height:50px;
+			line-height: 50px;
+			background: rgba(0,0,0,1);
+
+			
+			/*position: absolute;
+			bottom:3%;
+			z-index: 100;
+			text-align: center;*/
+		}
+		
+		@media (max-device-width: 780px){
+			#golist{
+				display: block !important;
+			}
+		}
+	</style>
+	<title>路易威登</title>
+</head>
+<body>
+	<iframe id="iframe" src="web.html" width="100%" height="90%">
+     
+    
+	</iframe>
+	<div class="topic">
+		<img src="images/series2.png" width="30%">
+	</div>
+</body>
+</html>

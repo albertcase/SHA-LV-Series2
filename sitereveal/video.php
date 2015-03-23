@@ -40,9 +40,8 @@
 			    	if($("#intro-video").hasClass("ui-page-active")){
 						var video_chemin ="";
 						$.get( "php/ws.php?rand=1", function( data ) {
-						  console.log(data);
 						  video_chemin=data.msg;
-						  
+						  alert(video_chemin)
 						  $("#random-video-wrapper").html("<video width='100%' height='320' controls='controls' poster='images/video/placeholder-video.jpg' id='randomvideo' style='width:100%;'><source src='"+video_chemin+"' type='video/mp4' /></video>");
 						
 						  document.getElementById('randomvideo').play();
@@ -69,10 +68,12 @@
 		<?php include'menu.php';?>
 		<!-- <h1><img src="images/logo.png" alt="louis-vuitton"></h1> -->
 	</header>
-	<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: 10px auto; text-align:center; width:100%;" id="teaser-video">
+	
+	<div id="random-video-wrapper">
+		<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: 10px auto; text-align:center; width:100%;" id="teaser-video">
 			<source src='<?php echo $myvideo; ?>' type='video/mp4' />
-	</video>
-	<div id="random-video-wrapper"></div>
+		</video>
+	</div>
 	<p class="text" id="shake-it-text"><img src="images/shakeshake-wechatwechat.png" /></p>
 	<p class="text" id="shake-it-again-text"><img src="images/shakeshake-wechatwechat2.png" /></p>
 	<div class="liens-home" >

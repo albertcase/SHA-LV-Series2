@@ -124,7 +124,7 @@ body.video{
 .nav-home{  list-style: none;  color: red;  text-align: center;  padding: 0;  margin: 0;}
 .nav-home li {  display: inline;  text-transform: uppercase;  padding: 3%;  text-decoration: underline;}
 
-.liens-home{  text-align: center;  bottom: 20%;  margin-top: 10%;  margin-bottom: 5%;}
+.liens-home{  text-align: center;  bottom: 20%;  margin-top: 6%;  margin-bottom: 5%;}
 .liens-home a, .btn {  display: block;  color: white;  line-height: 25px; padding: 10px 0 4px;  text-decoration: none;  border: 1px solid #636363;  width: 50%;  margin:0 auto;  margin-top: 2%; font-size: 13px;}
 .liens-home a:hover, .btn:hover{color: #000; background: #636363;}
 

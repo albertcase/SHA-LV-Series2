@@ -4,6 +4,6 @@ error_reporting(E_ALL);
 include("ws.php"); 
 $data["act"]="random_video"; 
 $einvitations = wsCall($data);
-echo json_encode($einvitations)
+echo json_encode($einvitations);
 exit;
 ?>

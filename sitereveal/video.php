@@ -1,4 +1,6 @@
-<?php include("php/teaser.php"); ?>
+<?php include("php/teaser.php");
+$_SESSION['sharestatus']=1;
+?>
 <!DOCTYPE html> 
 <html>
 <head>
@@ -140,7 +142,7 @@
 	}else{ ?>
 	<a href="php/down.php?fic=<?php echo urlencode(addslashes($_GET["mp4"]));?>" download="my_video.mp4" class="btn" id="download-btn" data-ajax="false">Download</a>
 	<?php } ?>
-	<a href="share.php?a=1" class="btn" data-ajax="false">立即分享</a>
+	<a href="share.php" class="btn" data-ajax="false">立即分享</a>
 	<a href="invitation.php" class="btn" data-ajax="false">申领邀请函</a>
 </div>
 

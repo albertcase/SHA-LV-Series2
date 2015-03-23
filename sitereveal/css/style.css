@@ -541,7 +541,7 @@ border-right: 1px solid #e70010;
     margin: 0 auto;
   }
 
-.layer-step5{background: url(../images/layer.png) no-repeat center top; background-size: 100% auto; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000000; }
+.layer-step5{background: url(../images/layer.png) no-repeat center top; background-size: 100% auto; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000000; display: none; }
 /*******************************************************************
 
                 6 - invitation

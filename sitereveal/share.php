@@ -19,14 +19,10 @@
 
 	<script type="text/javascript">
 		window.onload = function() {
-		    
 
 			$(".layer-step5").on( "click", function(e) {
 				$(".layer-step5").hide();
-			});
-
-
-			
+			});	
 
 		};
 	</script>	

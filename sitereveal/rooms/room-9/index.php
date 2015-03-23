@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>贴纸墙 - Louis Vuitton</title>
+	<title>Louis Vuitton</title>
 
 	<!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">

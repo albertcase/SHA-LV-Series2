@@ -20,7 +20,7 @@ if($deviceType == "computer"){
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Louis Vuitton Series 2 Beijing</title>
+	<title>Louis Vuitton</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css?v=1" />

@@ -6,7 +6,7 @@ $p_max=48;
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>L.V</title>
+	<title>Louis Vuitton</title>
 	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>

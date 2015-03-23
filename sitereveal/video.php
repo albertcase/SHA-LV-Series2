@@ -70,7 +70,7 @@
 	</header>
 	
 	<div id="random-video-wrapper">
-		<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: 0 auto; text-align:center; width:100%;" id="teaser-video">
+		<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: -5% auto; text-align:center; width:100%;" id="teaser-video">
 			<source src='<?php echo $myvideo; ?>' type='video/mp4' />
 		</video>
 	</div>

@@ -16,12 +16,4 @@ function wsCall($fields){
 		return json_decode($resultat);
 }
 
-if(isset($_GET['rand'])&&$_GET['rand']==1){
-	ini_set("display_errors",1);
-	error_reporting(E_ALL);
-	$ary['act']='random_video';
-	echo  wsCall($ary);
-	exit;
-}
-
 ?>

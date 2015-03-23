@@ -17,8 +17,9 @@ function wsCall($fields){
 }
 
 if(isset($_GET['rand'])&&$_GET['rand']==1){
-	$_POST['act']='random_video';
-	echo  wsCall($_POST);
+	$ary['act']='random_video';
+	echo  wsCall($ary);
+	exit;
 }
 
 ?>

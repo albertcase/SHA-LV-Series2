@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>抽象标题 - Louis Vuitton</title>
+<title>Louis Vuitton</title>
 <style type="text/css">
 
 body{background: #000;}

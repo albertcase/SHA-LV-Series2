@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   	<meta charset="utf-8">
-  	<title>后台 - Louis Vuitton</title>
+  	<title>Louis Vuitton</title>
   	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../../css/rooms.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

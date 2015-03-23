@@ -41,6 +41,7 @@
 						var video_chemin ="";
 						$.get( "php/videoapi.php", function( data ) {
 						  video_chemin=data.msg;
+						  alert(video_chemin);
 						  $("#random-video-wrapper").html("<video width='100%' height='320' controls='controls' poster='images/video/placeholder-video.jpg' id='randomvideo' style='width:100%;'><source src='"+video_chemin+"' type='video/mp4' /></video>");
 						
 						  document.getElementById('randomvideo').play();

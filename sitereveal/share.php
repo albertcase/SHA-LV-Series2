@@ -30,7 +30,7 @@ if(isset($_SESSION['sharestatus'])){
 		
 		window.onload = function() {
 			var status='<?php echo $status;?>';
-			if(status==1){
+			if(status==0){
 				$(".layer-step5").hide();
 			}
 			$(".layer-step5").on( "click", function(e) {

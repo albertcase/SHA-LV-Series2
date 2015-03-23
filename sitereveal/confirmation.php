@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_POST["act"]&&!isset($_GET["invite"])){
+if(!isset($_POST["act"])&&!isset($_GET["invite"])){
 header("Location:invitation.php");
 exit();
 }

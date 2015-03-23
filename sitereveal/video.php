@@ -41,7 +41,6 @@
 						var video_chemin ="";
 						$.get( "php/videoapi.php", function( data ) {
 						  video_chemin=data.msg;
-						  alert(video_chemin)
 						  $("#random-video-wrapper").html("<video width='100%' height='320' controls='controls' poster='images/video/placeholder-video.jpg' id='randomvideo' style='width:100%;'><source src='"+video_chemin+"' type='video/mp4' /></video>");
 						
 						  document.getElementById('randomvideo').play();
@@ -141,7 +140,7 @@
 	}else{ ?>
 	<a href="php/down.php?fic=<?php echo urlencode(addslashes($_GET["mp4"]));?>" download="my_video.mp4" class="btn" id="download-btn" data-ajax="false">Download</a>
 	<?php } ?>
-	<a href="share.php" class="btn" data-ajax="false">立即分享</a>
+	<a href="share.php?a=1" class="btn" data-ajax="false">立即分享</a>
 	<a href="invitation.php" class="btn" data-ajax="false">申领邀请函</a>
 </div>
 

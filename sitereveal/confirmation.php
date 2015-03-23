@@ -4,7 +4,7 @@ if(!isset($_POST["act"])&&!isset($_GET["invite"])){
 header("Location:invitation.php");
 exit();
 }
-if(isset($_GET["invite"]){
+if(isset($_GET["invite"])){
 	$img=$_SESSION["invite"];
 }else{
 	include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone"]; $einvitations = wsCall($_POST);

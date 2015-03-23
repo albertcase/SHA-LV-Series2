@@ -48,7 +48,8 @@ $_SESSION['sharestatus']=1;
 						  document.getElementById('randomvideo').play();
 						  $('#shake-it-text').hide();
 						  $('#shake-it-again-text').show();
-						  $('#logo-video').hide();			  
+						  $('#logo-video').hide();	
+						  $("#randomvideo").height($(window).height()*0.57);		  
 						  
 						});
 

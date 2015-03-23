@@ -48,12 +48,20 @@ if(isset($_SESSION['sharestatus'])){
 <div data-role="page" id="preview">
 	<div class="layer-step5"></div>
 	<a class="back-btn" href="video.php" data-ajax="false">back</a>
-	<video width='250' height='360' controls='controls' poster='images/video/placeholder-video.jpg'><source src='<?php echo "".$_GET["fic"];?>' type='video/mp4' /></video>
+	<video width='250' height='360' id="share-video" controls='controls' poster='images/video/placeholder-video.jpg'><source src='<?php echo "".$_GET["fic"];?>' type='video/mp4' /></video>
 	<a href="video.php#visualisation" class="btn" data-ajax="false">制作微视频</a>
 	<a href="invitation.php" class="btn" data-ajax="false">申领邀请函</a>
 </div>
 
 
+<script type="text/javascript">
+	$(function(){
+		$(document).ready(function(){
+			$("#share-video").height($(window).height()*0.57);
+		});
+			
+	});
+</script>
 
 
 </body>

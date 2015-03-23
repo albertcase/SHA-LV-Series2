@@ -22,7 +22,7 @@ include("php/ws.php"); $_POST["act"]="einvitations"; $_POST["tel"]=$_POST["phone
 <body class="home confirmation">
 	<div data-role="page" id="guest">
 			<?php include'menu.php';?>
-			<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $einvitations->img;?>" class="img-invitation"></a>
+			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $einvitations->img;?>" class="img-invitation"></a>
 			<div class="btn-invitation">
 				<a href="baidumap/index.html" class="btn" id="save-wechat" data-ajax="false">立即前往</a>
 				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$einvitations->img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->

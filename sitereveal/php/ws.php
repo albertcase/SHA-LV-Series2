@@ -16,5 +16,10 @@ function wsCall($fields){
 		return json_decode($resultat);
 }
 
+if(isset($_GET['rand'])&&$_GET['rand']==1){
+	echo 1;die;
+	$_POST['act']='random_video';
+	return wsCall($_POST);
+}
 
 ?>

@@ -149,7 +149,7 @@ $_SESSION['sharestatus']=1;
 <script>
 	$(function(){
 		$(document).ready(function(){
-			$("#teaser-video").height($(window).height()*0.7);
+			$("#teaser-video").height($(window).height()*0.57);
 		});
 			
 	});

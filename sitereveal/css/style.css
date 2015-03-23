@@ -414,7 +414,7 @@ body.look {background: #FFF!important;}
 
 #random-video-wrapper video{display: block; opacity: 1;}
 
-#intro-video{padding-bottom: 280px; overflow: auto;}
+#intro-video{/*padding-bottom: 280px; */ overflow: auto;}
 #intro-video video{width: 202px; margin: 0 auto;}
 
 #shake-it-again-text{display: none;}

@@ -49,7 +49,7 @@ $_SESSION['sharestatus']=1;
 						  $('#shake-it-text').hide();
 						  $('#shake-it-again-text').show();
 						  $('#logo-video').hide();	
-						  $("#randomvideo").height($(window).height()*0.55);		  
+						  $("#randomvideo").height($(window).height()*0.57);		  
 						  
 						});
 

@@ -32,6 +32,8 @@ if(isset($_SESSION['sharestatus'])){
 			var status='<?php echo $status;?>';
 			if(status==0){
 				$(".layer-step5").hide();
+			}else{
+				$(".layer-step5").show();
 			}
 			$(".layer-step5").on( "click", function(e) {
 				$(".layer-step5").hide();

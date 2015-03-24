@@ -5,9 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Louis Vuitton</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
-	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 </head>
 <body>
@@ -29,7 +27,16 @@
 		});	
 	});
 </script>
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?df4334f8d06255e9fd82b07d21c47e3c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+_hmt.push(['_trackPageview', "series2-uat"]);
+</script>
 </body>
 
 </html>

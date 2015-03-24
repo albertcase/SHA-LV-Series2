@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Louis Vuitton</title>
+	<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
 	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>

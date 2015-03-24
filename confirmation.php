@@ -33,7 +33,18 @@ if(isset($_GET["invite"])){
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="home confirmation">
-	<img src="/images/share.jpg" class="shareimg" />
+
+<div id="handTips">
+ <div class="hand-action">
+    <div class="hc1 hc"></div>
+    <div class="hc2 hc"></div>
+    <div class="hand-img"></div>
+    <div class="tip2">长按图片点击保存到本地</div> 
+ </div>
+</div>
+
+<img src="/images/share.jpg" class="shareimg" />
+
 	<div data-role="page" id="guest">
 			<?php include'menu.php';?>
 			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $img;?>" class="img-invitation"></a>
@@ -42,6 +53,15 @@ if(isset($_GET["invite"])){
 				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->
 			</div>
 	</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	function handTips(){
+		$("#handTips").remove();
+	}
+
+	setTimeout(handTips,3000);
+})
+</script>
 <script>
 var _hmt = _hmt || [];
 (function() {

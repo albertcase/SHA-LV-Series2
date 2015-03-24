@@ -19,6 +19,7 @@
 
 </head>
 <body class="home invitation-body">
+
 	<img src="/images/share.jpg" class="shareimg" />
 	<div data-role="page" id="guest">
 		<?php include'menu.php';?>
@@ -47,15 +48,16 @@
 
 	<script type="text/javascript">
 $(document).ready(function() {
-    	$("input[type=submit]").click(function(e) {
-    		var name = $("#name").val();
-			var phone = $("#phone").val();
-			if (name == '') {
-	    		e.preventDefault();
-	    		$("#message-error").show();
-			}
-    	});
-    });
+	$("input[type=submit]").click(function(e) {
+		var name = $("#name").val();
+		var phone = $("#phone").val();
+		if (name == '') {
+    		e.preventDefault();
+    		$("#message-error").show();
+		}
+	});
+});
+
 </script>
 <script>
 var _hmt = _hmt || [];

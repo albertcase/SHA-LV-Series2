@@ -63,3 +63,14 @@
 #back.black a {
   background-image: url("../images/close.png");
 }
+
+
+
+/* 3.24 */
+.shareimg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}

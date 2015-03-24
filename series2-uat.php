@@ -21,7 +21,7 @@ if($deviceType == "computer"){
 <head>
 	<meta charset="UTF-8">
 	<title>Louis Vuitton</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 </head>
@@ -41,9 +41,7 @@ if($deviceType == "computer"){
 	$(function(){
 		$(document).ready(function(){
 			$("#teaser-video").height($(window).height()*0.7);
-		});
-
-			
+		});	
 	});
 </script>
 <script>
@@ -54,7 +52,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "index.php"]);
+_hmt.push(['_trackPageview', "series2-uat"]);
 </script>
 </body>
 

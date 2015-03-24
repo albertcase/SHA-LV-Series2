@@ -51,8 +51,8 @@ if($_POST["act"]=="upload_image" && $_POST["base64_img1"]!="" && $_POST["base64_
 			if($_POST["dd"]!="loc"){
 			header("Location:http://creative.samesame.typhon.net/clients/LV/SITE/video.php?mp4=".urlencode($res["video"])."#preview");
 			}else{
-			header("Location:/sitereveal/video.php?mp4=".urlencode($res["video"])."#preview");
-			echo "<script>window.location.assign('/sitereveal/video.php?mp4=".urlencode($res["video"])."#preview')</script>";
+			header("Location:/video.php?mp4=".urlencode($res["video"])."#preview");
+			echo "<script>window.location.assign('/video.php?mp4=".urlencode($res["video"])."#preview')</script>";
 			}
 			exit();
 		}else{

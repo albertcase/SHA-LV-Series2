@@ -23,6 +23,7 @@ body {
 <script src="../../js/lib/jquery/jquery-ui.min.js"></script>
 </head>
 <body>
+    <img src="/images/share.jpg" class="shareimg" />
   <div id="back"> <a href="../../rooms.php#second"></a></div>
     <div class="cache-top"><img src="images/trunk1.png"  width="100%"></div>
     <div class="cache-bottom"><img src="images/trunk2.png"  width="100%"></div>

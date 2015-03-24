@@ -19,6 +19,7 @@
 
 </head>
 <body class="home invitation-body">
+	<img src="/images/share.jpg" class="shareimg" />
 	<div data-role="page" id="guest">
 		<?php include'menu.php';?>
 			<header class="header-home" >

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 </head>
 <body class="home">
+	<img src="/images/share.jpg" class="shareimg" />
 	<header class="header-home">
 		<h1><img src="images/logo.png" alt="louis-vuitton"></h1>
 

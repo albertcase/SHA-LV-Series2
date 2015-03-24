@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 </head>
 <body>
-
+<img src="/images/share.jpg" class="shareimg" />
 	<video  controls='controls' poster='images/video/placeholder-video.jpg' style="display:block; margin: 10px auto; text-align:center; width:100%;" id="teaser-video">
 		<source src='<?php echo $myvideo; ?>' type='video/mp4' />
 	</video>

@@ -51,7 +51,7 @@
 
 </head>
 	<body>
-
+<img src="/images/share.jpg" class="shareimg" />
 	<div data-role="page" id="rooms-parallax">	
 
 		<?php include'menu.php';?>

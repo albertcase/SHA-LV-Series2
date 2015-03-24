@@ -24,7 +24,7 @@ if(isset($_SESSION['sharestatus'])){
 </head>
 
 <body class="video">
-
+<img src="/images/share.jpg" class="shareimg" />
 
 	<script type="text/javascript">
 		

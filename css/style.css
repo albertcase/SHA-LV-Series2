@@ -561,4 +561,11 @@ input[type='submit']{
   .header-home{margin-top: 5%;}
 }
 
-
+/* 3.24 */
+.shareimg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}

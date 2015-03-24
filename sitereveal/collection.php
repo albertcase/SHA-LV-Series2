@@ -15,7 +15,7 @@
 </head>
 
 <body class="collection-body">
-
+<img src="/images/share.jpg" class="shareimg" />
 
 
 

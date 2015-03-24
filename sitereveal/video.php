@@ -18,7 +18,7 @@
 </head>
 
 <body class="video">
-
+<img src="/images/share.jpg" class="shareimg" />
 	<script type="text/javascript">
 		window.onload = function() {
 		    

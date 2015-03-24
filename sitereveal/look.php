@@ -18,7 +18,7 @@ $p_max=48;
 </head>
 
 <body class="look">
-
+<img src="/images/share.jpg" class="shareimg" />
 
 <div data-role="page" id="look-detail" data-next="look.php?id=<?php if($p<$p_max){echo $p+1;}else{echo $p;} ?>" data-prev="look.php?id=<?php if($p>1){echo $p-1;}else{echo $p;}?>">		
 	<a href="collection.php#grid-collection" data-ajax="false">

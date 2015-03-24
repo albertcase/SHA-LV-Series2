@@ -33,6 +33,7 @@ if(isset($_GET["invite"])){
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="home confirmation">
+	<img src="/images/share.jpg" class="shareimg" />
 	<div data-role="page" id="guest">
 			<?php include'menu.php';?>
 			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $img;?>" class="img-invitation"></a>

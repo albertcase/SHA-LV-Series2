@@ -27,6 +27,7 @@ body{background: #000;}
 </script>
 </head>
 <body>
+    <img src="/images/share.jpg" class="shareimg" />
   <div id="back"> <a href="../../rooms.php#first"></a></div>
     <ul id="scene" class="scene">
                 <!--<li class="layer" data-depth="0.00"><img src="img/logo-lv/Sans-titre1.png"></li>-->

@@ -14,6 +14,7 @@
   	<script src="js/script.js"></script>
 </head>
 <body class="accessoires">
+  <img src="/images/share.jpg" class="shareimg" />
 <div id="back" class="black"> <a href="../../rooms.php#fifth"></a></div>	
 
 

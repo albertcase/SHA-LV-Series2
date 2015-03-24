@@ -16,6 +16,7 @@
 </head>
 
 <body class="home">
+	<img src="/images/share.jpg" class="shareimg" />
 <div data-role="page" id="introduction">
 
 	<div role="main" class="ui-content">

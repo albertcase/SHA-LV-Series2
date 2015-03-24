@@ -18,6 +18,7 @@
 
 </head>
 <body>
+	<img src="/images/share.jpg" class="shareimg" />
 	<div id="container" class="container">
 		<div id="back"> <a href="../../rooms.php#nine"></a></div>
 		<div>

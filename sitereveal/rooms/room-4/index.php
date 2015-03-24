@@ -15,6 +15,8 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+<img src="/images/share.jpg" class="shareimg" />
+  
 	<div id="dialog" >
   <p>左右滑动
   </p>

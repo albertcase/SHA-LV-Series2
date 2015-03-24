@@ -15,6 +15,7 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+  <img src="/images/share.jpg" class="shareimg" />
 <div id="dialog" style="background:url(images/notification.jpg) no-repeat center center #020202; background-size:cover;" >
 
 </div>

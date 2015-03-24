@@ -16,6 +16,7 @@
   	<script src="js/script.js"></script>
 </head>
 <body>
+ <img src="/images/share.jpg" class="shareimg" />
   <div id="back" class="black"> <a href="../../rooms.php#eighth"></a></div>  
   <div id="gif-image"></div>	
   <div id="jpg-image"><img src="images/fixe.jpg" style="opacity:0;" /></div>

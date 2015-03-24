@@ -53,7 +53,14 @@
 		var point = new BMap.Point(lng,lat);
 		var point1 = new BMap.Point(116.464285,39.915168);
 		map.centerAndZoom(point1, 24);
-		//map.addControl(new BMap.ZoomControl());      
+		//map.addControl(new BMap.ZoomControl()); 
+		var opts = {
+			width : 100,    // 信息窗口宽度
+			height: 70,     // 信息窗口高度
+			title : "路易威登之家"  // 信息窗口标题
+		}
+		var infoWindow = new BMap.InfoWindow("点击前往路易威登之家", opts);  // 创建信息窗口对象
+		map.openInfoWindow(infoWindow,point1); //开启信息窗口     
 		var marker1 = new BMap.Marker(point1);  // 创建标注
 		map.addOverlay(marker1);              // 将标注添加到地图中
 		marker1.addEventListener("click", function(){

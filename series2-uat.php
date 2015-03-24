@@ -14,7 +14,7 @@
 	</video>
 
 	<div class="liens-home home-part" >
-		<a href="index2.php">进入展览</a>
+		<a href="/index2.php">进入展览</a>
 	</div>
 
 	<a href="http://www.louisvuitton.cn" target="_blank" class="lien-vuitton">www.louisvuitton.cn</a>

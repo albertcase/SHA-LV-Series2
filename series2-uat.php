@@ -6,7 +6,15 @@
 	<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<script src="js/lib/jquery/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />		
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+	</style>	
 </head>
 <body>
 <img src="/images/share.jpg" class="shareimg" />

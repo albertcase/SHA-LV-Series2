@@ -1,10 +1,13 @@
-<?php include("php/teaser.php"); ?><!DOCTYPE html>
+<?php include("php/teaser.php"); ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Louis Vuitton</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
+	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />		
 </head>
 <body>
@@ -23,9 +26,7 @@
 	$(function(){
 		$(document).ready(function(){
 			$("#teaser-video").height($(window).height()*0.7);
-		});
-
-			
+		});	
 	});
 </script>
 

@@ -39,7 +39,7 @@ class einvitations  {
 		
 		$tb = imagettfbbox(17, 0, $font, $name);
 		$x = ceil((750 - $tb[2]) / 2); // lower left X coordinate for text
-		$y=850;
+		$y=836;
 		imagettftext($src, 17, 0, $x, $y, $white, $font, $name); // write text to image
 		
 		// Output to browser

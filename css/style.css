@@ -709,8 +709,6 @@ input[type='submit']{
   top: 0;
   opacity: 0;
   z-index: -1;
-  width: 1px;
-  height: 1px;
 }
 
 

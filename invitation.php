@@ -14,9 +14,6 @@
 <script src="js/lib/jquery/jquery.validate.min.js"></script>	
 <script type="text/javascript" src="js/script.js"></script>
 
-
-
-
 </head>
 <body class="home invitation-body">
 

@@ -14,7 +14,7 @@
 	</video>
 
 	<div class="liens-home home-part" >
-		<a href="/index2.php">进入展览</a>
+		<a href="index2.php">进入展览</a>
 	</div>
 
 	<a href="http://www.louisvuitton.cn" target="_blank" class="lien-vuitton">www.louisvuitton.cn</a>
@@ -28,16 +28,7 @@
 			
 	});
 </script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?df4334f8d06255e9fd82b07d21c47e3c";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-_hmt.push(['_trackPageview', "index.php"]);
-</script>
+
 </body>
 
 </html>

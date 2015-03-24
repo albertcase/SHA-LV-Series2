@@ -1,0 +1,204 @@
+body {
+  font-family: monospace;
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  background: #000;
+}
+
+img {
+  display: block;
+  width: 50%;
+}
+.layer img{
+  width: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+.wechat{
+  text-align: center;
+  width: 100%;
+  background-color: #e01340;
+  line-height:50px;
+  position: fixed;
+  bottom: 0;  
+  opacity: 0;
+  z-index: 99999;
+}
+.wechat a {
+  text-decoration: none;
+  color: white;
+}
+
+#back{
+  z-index: 999999!important;
+}
+.slide{
+  opacity: 0;
+  position: absolute;
+  padding-top: 45%;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  height: 73%;
+  top: 0;
+  background: rgba(255,255,255,0.94);
+}
+
+.slide.active{
+  opacity: 1;
+}
+
+.slide .bx-controls{display: none;}
+
+
+/*label {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.4em 0;
+  cursor: pointer;
+}
+
+button {
+  border: 10px solid #00FFAA;
+  font-family: monospace;
+  position: absolute;
+  line-height: 60px;
+  text-align: right;
+  padding: 0 1.2em;
+  background: #444;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  height: 80px;
+  width: 80%;
+  top: 260px;
+  margin: 0;
+  left: 10%;
+}
+
+button:hover {
+  background: #00FFAA;
+}*/
+
+/*
+input[type=checkbox] + label:before {
+  display: inline-block;
+  position: relative;
+  background: #444;
+  margin-right: 8px;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: 1px;
+}
+
+input[type=checkbox]:checked + label:before {
+  background: #00FFAA;
+}*/
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+  top: 0;
+
+}
+
+.fill {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  top: 5%;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+.border {
+  border: 2px dashed #00FFAA;
+}
+
+.aspect {
+  opacity: 0.2;
+}
+
+.layer{width: 100px!important;}
+
+
+
+/** Parallax **/
+.layer:nth-child(1) {
+  opacity: 1;  position: absolute; margin-top: 1%;
+}
+
+.layer:nth-child(2) {
+  opacity: 1;  position: absolute; margin-left: 25%; margin-top: 25%;
+}
+
+.layer:nth-child(3) {
+  opacity: 1;  position: absolute; margin-left: 45%; margin-top: 80%;
+}
+
+.layer:nth-child(4) {
+  opacity: 1;  position: absolute; margin-left: 5%; margin-top: 45%;
+}
+
+.layer:nth-child(5) {
+  opacity: 1;  position: absolute; margin-left: 5%; margin-top: 75%;
+
+}
+.layer:nth-child(6) {
+  opacity: 1;  position:absolute ;margin-left: 15%; margin-top: 100%;
+
+}
+.layer:nth-child(7) {
+  opacity: 1;  position: absolute;margin-left: 35%; margin-top: 5%;
+
+}
+.layer:nth-child(8) {
+  opacity: 1;  position: absolute; margin-left: 55%; margin-top: 100%;
+ 
+}
+.layer:nth-child(9) {
+  opacity:1;  position: absolute; margin-left: 40%; margin-top: 35%;
+
+}
+.layer:nth-child(10) {
+  opacity: 1;  position: absolute; margin-left: 25%; margin-top: 70%;
+
+}
+.layer:nth-child(11) {
+  opacity: 1;  position: absolute; margin-left: 70%; margin-top: 45%;
+
+}
+.layer:nth-child(12) {
+  opacity: 1;  position: absolute; margin-left: 70%; margin-top: 15%;
+
+}
+.layer:nth-child(13) {
+  opacity: 1;  position: absolute; margin-left: 70%; margin-top: 70%;
+
+}
+
+
+
+
+
+/*.layer, .layer img{
+  margin: 0;
+  padding: 0;
+}*/

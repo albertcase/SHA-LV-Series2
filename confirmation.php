@@ -53,7 +53,7 @@ var _hmt = _hmt || [];
 _hmt.push(['_trackPageview', "confirmation.php"]);
 </script>
 <script>
-	window.history.pushState( {} , '/', '/' );
+//	window.history.pushState( {} , '/', '/' );
 </script>
 
 </body>

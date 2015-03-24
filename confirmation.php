@@ -39,7 +39,7 @@ if(isset($_GET["invite"])){
     <div class="hc1 hc"></div>
     <div class="hc2 hc"></div>
     <div class="hand-img"></div>
-    <div class="tip2">长按图片保存到相册</div> 
+    <div class="tip2">长按图片<br />保存到相册</div> 
  </div>
 </div>
 

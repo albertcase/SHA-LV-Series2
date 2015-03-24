@@ -98,9 +98,9 @@ html[xmlns] .clearfix {
 
 /************** GENERAL **************/
 
-body{ font-family: arial,helvetica;	background: #000; color: #FFF; letter-spacing: 0.1em;  }
+body{ font-family: Tahoma, Arial, Helvetica, SimHei, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;	background: #000; color: #FFF; letter-spacing: 0.1em;  }
 a{color: #FFF; text-decoration: none;}
-.red{color: #e70010; display: block;}
+.red{color: #ED0800; display: block;}
 
 .back-btn{position: absolute; top: 10px; left: 10px; display: block; background: url('../images/close-white.png') no-repeat left top; width: 30px; height: 30px; background-size: cover; overflow: hidden; line-height: 99999em;}
 
@@ -112,19 +112,29 @@ a{color: #FFF; text-decoration: none;}
 
 
 body.home, body.video { font-family: 'LVLight'; font-size: 18px; background-image: url('../images/background.jpg'); background-size: cover; color:#fff; margin: 0;}
-.header-home { margin-top: 15%;}
+
+body.video{
+  background: #000;
+}
+
+.header-home { margin-top: 12%;}
 .home h1, .video h1{ text-transform: uppercase; font-size: 1.5em; color: white;  text-align: center;  margin: 0px;}
 .home h2, .video h2{ text-transform: uppercase; color: red; font-size: 2em; text-align: center;  margin: 0px;}
 
 .nav-home{  list-style: none;  color: red;  text-align: center;  padding: 0;  margin: 0;}
 .nav-home li {  display: inline;  text-transform: uppercase;  padding: 3%;  text-decoration: underline;}
 
-.liens-home{  text-align: center;  bottom: 20%;  margin-top: 10%;  margin-bottom: 5%;}
-.liens-home a, .btn {  display: block;  color: white;  line-height: 25px; padding: 11px 0 7px;  text-decoration: none;  border: 2px solid #636363;  width: 60%;  margin:0 auto;  margin-top: 8%;}
+.liens-home{  text-align: center;  bottom: 20%;  margin-top: 6%;  margin-bottom: 5%;}
+.liens-home a, .btn {  display: block;  color: white;  line-height: 25px; padding: 10px 0 4px;  text-decoration: none;  border: 1px solid #636363;  width: 50%;  margin:0 auto;  margin-top: 2%; font-size: 13px;}
+.liens-home a:hover, .btn:hover{color: #000; background: #636363;}
 
+.liens-home.home-part a{padding: 4px 0 4px; }
+
+.lien-vuitton{text-decoration: underline; display: block; margin: 15px auto; text-align: center;}
 
 .home  img, h2 img{  display: block;  width: 80%;  height: auto; margin: 0 auto;}
 .home h1 img, .video h1 img{width: 25%; margin: 10px auto; }
+
 
 #text, .text{
   width: 70%;
@@ -132,7 +142,7 @@ body.home, body.video { font-family: 'LVLight'; font-size: 18px; background-imag
   margin: 0 auto ;
   margin-top: 5%;
   line-height: 1.3em;
-  font-size: 95%;
+  font-size: 13px;
 }
 
 #scene { margin: 10% auto; padding: 0; float: left; z-index: 1 ;}
@@ -184,12 +194,13 @@ html{
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0 15px 15px 0;
 }
 
 
 
 #rooms-parallax .panel-btn{  z-index: 10000;}
-#rooms-parallax #mypanel{z-index: 10001;}
+#rooms-parallax #mypanel{z-index: 100000000;}
 #exib {
   color: white;
   text-transform: uppercase;
@@ -199,8 +210,59 @@ html{
   width: 100%;
 }
 
+.home footer{margin: 30px auto;}
+.home footer h2 img{  display: block;  width: 50%;  height: auto; margin: 0 auto;}
+.home footer .red{text-align: center; font-size: 12px; margin: 3px auto;}
 
 
+.video footer{margin: 80px auto 10px auto;}
+.video footer h2 img{  display: block;  width: 50%;  height: auto; margin: 0 auto;}
+.video footer .red{text-align: center; font-size: 12px; margin: 3px auto;}
+.video #visualisation footer{margin-top: 25px;}
+
+/*.scrollTop{bottom: 0px;  position: fixed; text-align: center; width: 100%; z-index: 9999999; padding-bottom: 10px;}
+*/
+
+.scrollTop{
+  width:30px;
+  height:50px;
+  background:url("../images/scrollTop.png") no-repeat center;
+  background-size: 100% auto;
+  position:fixed;
+  left:50%;
+  z-index: 99999;
+  bottom:1em;
+  margin: 0 0 0 -15px;
+}
+
+
+.scrollTop {
+  -webkit-animation: start 1.5s infinite ease-in-out;
+  -moz-animation: start 1.5s infinite ease-in-out;
+  animation: start 1.5s infinite ease-in-out;
+}
+
+
+
+/**
+* = animate 动画样式
+*******************************************************************************************************/
+/*箭头指示引导*/
+@-webkit-keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@keyframes start {
+0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+60% {opacity: 1;-webkit-transform: translate(0,0);}
+100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
 
 
 /*******************************************************************
@@ -232,23 +294,25 @@ html{
 /*** Images Multi Scroll ***/
 
 
-#left1 { background: url(../images/01.jpg) no-repeat right center ; }
-#right1 { background: url(../images/02.jpg) no-repeat left center  ; }
-#left2 { background: url(../images/03.jpg) no-repeat right center ; }
-#right2 { background: url(../images/04.jpg) no-repeat left center  ;  }
-#left3 { background: url(../images/05.jpg) no-repeat right center ; }
-#right3 { background: url(../images/06.jpg) no-repeat left center  ; }
-#left4 { background: url(../images/07.jpg) no-repeat right center ; }
-#right4 { background: url(../images/08.jpg) no-repeat left center  ; }
+#left1 { background: url(../images/0001.jpg) no-repeat right center ; }
+#right1 { background: url(../images/001.jpg) no-repeat left center  ; }
+#left2 { background: url(../images/01.jpg) no-repeat right center ; }
+#right2 { background: url(../images/02.jpg) no-repeat left center  ;  }
+#left3 { background: url(../images/03.jpg) no-repeat right center ; }
+#right3 { background: url(../images/04.jpg) no-repeat left center  ; }
+#left4 { background: url(../images/15.jpg) no-repeat right center ; }
+#right4 { background: url(../images/16.jpg) no-repeat left center  ; }
 #left5 { background: url(../images/09.jpg) no-repeat right center ; }
 #right5 { background: url(../images/10.jpg) no-repeat left center  ; }
-#left6 { background: url(../images/11.jpg) no-repeat right center ; }
-#right6 { background: url(../images/12.jpg) no-repeat left center  ; }
-#left7 { background: url(../images/13.jpg) no-repeat right center ; }
-#right7 { background: url(../images/14.jpg) no-repeat left center  ;}
-#left8 { background: url(../images/15.jpg) no-repeat right center ; }
-#right8 { background: url(../images/16.jpg) no-repeat left center  ; }
-#left1, #left2, #left3, #left4, #left5, #left6, #left7, #left8, #right1, #right2, #right3, #right4, #right5, #right6, #right7, #right8{
+#left6 { background: url(../images/05.jpg) no-repeat right center ; }
+#right6 { background: url(../images/06.jpg) no-repeat left center  ; }
+#left7 { background: url(../images/07.jpg) no-repeat right center ; }
+#right7 { background: url(../images/08.jpg) no-repeat left center  ;}
+#left8 { background: url(../images/11.jpg) no-repeat right center ; }
+#right8 { background: url(../images/12.jpg) no-repeat left center  ; }
+#left9 { background: url(../images/13.jpg) no-repeat right center ; }
+#right9 { background: url(../images/14.jpg) no-repeat left center  ; }
+#left1, #left2, #left3, #left4, #left5, #left6, #left7, #left8, #right1, #right2, #right3, #right4, #right5, #right6, #right7, #right8, #left9, #right9{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -265,14 +329,20 @@ html{
 #menu {	position:fixed;	top:0;	left:49%;	height: 100%;	z-index: 70;	width: 100%;	padding: 0;	margin:0; z-index: 50;}
 #menu li.middle-anchor {margin-bottom:85%; }
 
-.content-slide{position: absolute; left: 0; top: 30%; z-index: 500; width: 200%; text-align: center;}
+.content-slide{position: absolute; left: 0%; top: 30%; z-index: 500; width: 100%; text-align: center;}
+.content-slide h1{margin-top: 5px;}
+.ms-right .content-slide{right:0%; left: inherit; width: 200%; }
+.ms-left .content-slide{/*overflow:hidden;*/}
+.ms-left .content-slide h1{width: 200%;}
+.ms-left .content-slide h2{width: 200%;}
+.ms-left .content-slide .btn-play{margin: 0 auto; position: relative; right: -50%;}
 .content-slide h1{color: #FFF; font-size: 30px; text-transform: uppercase; margin-bottom: 10px; font-family: "LVLight";}
 .content-slide h2{color: #e70010; font-size: 45px; margin-bottom: 40px;}
 .content-slide .btn-play{display: inline-block; width: 60px; height: 60px; background: transparent url(../images/play.png); background-size: cover;  cursor: pointer;}
 
 .dark.content-slide h1 {color: #000;}
 .dark.content-slide .btn-play{background-image: url(../images/play-black.png);}
-
+.white.content-slide h2{color: #FFF;}
 /*** Controls Multiscroll ***/
 
 #controls:after{position: absolute; content: ""; border-left: 1px solid #FFF; opacity: 0.3; height: 100%; width: 1px; display: block; left: 49.9%; top: 0; z-index: 20;}
@@ -292,6 +362,14 @@ video{display: none;}
 #intro h1{font-size: 40px; font-family: "LVRegular"; text-transform: uppercase; text-align: center;}
 #introduction-collection{background: url(../images/collection/intro.jpg) no-repeat center top; background-size: cover; width: 100%; height: 100%; display: table-cell; vertical-align: middle; }
 .ui-mobile #introduction-collection .ui-page{height: 100%;}
+#introduction{   background-image: url("../images/background.jpg");
+    background-size: cover;}
+#introduction #text span{display: block;}
+#introduction #text .size-24{ font-size: 24px; margin: 15px auto;}
+#introduction #text .size-19{font-size: 19px; margin: 15px auto;}
+#introduction #text .size-15{font-size: 15px; margin: 15px auto;}
+#introduction #text .size-11{font-size: 11px; margin: 15px auto;}
+#introduction h2 img{width: 40%; margin: 10% auto 10px auto;}
 
 section.grid{overflow: scroll; height: 100%;}
 #grid-collection .item{float: left; width: 32%; margin: 0.6%; }
@@ -302,7 +380,7 @@ section.grid{overflow: scroll; height: 100%;}
 
 #look-detail{background: #FFF; text-align: center; color: #000; overflow: auto;}
 #look-detail a{display: block;}
-#look-detail p{font-family: "LVLight"; padding: 10px 30px; text-align: center; margin-bottom: 30px; text-transform: uppercase; line-height: 1.5em;}
+#look-detail p{font-family: "LVLight"; padding: 10px 30px; text-align: justify; margin-bottom: 30px; text-transform: uppercase; line-height: 1.5em; font-size: 13px;}
 body.look {background: #FFF!important;}
 #look-detail section{background: #FFF; position: relative; z-index: 2;}
 #look-detail section img{width: 100%; height: auto; display: block;}
@@ -310,10 +388,11 @@ body.look {background: #FFF!important;}
 #look-detail section .right{background: url(../images/right.png) no-repeat left top; width: 29px; height: 32px; display:block; position: absolute; right: 10px; top: 40%;  }
 
 
-#look-detail section#cta-look{background: rgba(0,0,0,0.5) url(../images/arrow-bottom.png) no-repeat center 55px; text-align: center; padding: 10px 0 5px 0; color: #FFF; position: fixed; bottom: 0; left: 0; width: 100%;}
-#look-detail section#cta-look a{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 999; display: block;}
+#look-detail div#cta-look{background: rgba(0,0,0,0.3) url(../images/arrow-bottom.png) no-repeat center 55px; text-align: center; padding: 10px 0 5px 0; color: #FFF; position: absolute; bottom: 0; left: 0; width: 100%;}
+#look-detail div#cta-look a{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 999; display: block; text-align: center;}
+#look-detail div#cta-look p{text-align: center;}
 #detail-look{padding-bottom: 50px; }
-
+#detail-look p{  margin-top: 30px;}
 /*******************************************************************
 
                 4 - VIDEO
@@ -323,30 +402,37 @@ body.look {background: #FFF!important;}
 #visualisation .header-home{padding-bottom: 20px;}
 #visualisation p{text-align: center; padding: 0 5px;}
 #visualisation .custom-photos{text-align: center; margin: 20px 0;}
-#visualisation .custom-photos .photos{width: 29%; margin: 1.5%; background: url(../images/video/placeholder.jpg) no-repeat center center; background-size: cover; height: 180px; display: inline-block;}
+#visualisation .custom-photos .photos{width: 90px; background: url(../images/video/placeholder.jpg) no-repeat center center; background-size: cover; height: 90px; display: inline-block; overflow: hidden;}
 #visualisation .custom-photos .photos .ui-input-text{ border: 0; margin: 0; height: 100%;}
 #visualisation .custom-photos .photos .ui-input-text .file-photo{height: 100%; padding: 0; width: 100%; opacity: 0;}
 #visualisation .custom-photos .photos.error-photo{border: 1px solid #E70010; margin: 1%; }
 
 .ui-mobile .ui-page-active#preview{overflow: auto;}
 #preview video{display: block!important; margin:30px auto 0 auto;  text-align: center;}
-#preview p{text-align: center; padding: 10px 10px; margin: 30px 0;}
-#preview .btn{text-align: center; margin-bottom: 30px;}
+#preview p{text-align: center; padding: 6px 10px; margin: 16px 0;}
+#preview .btn{text-align: center; margin-bottom: 20px;}
 
 #random-video-wrapper video{display: block; opacity: 1;}
 
-#intro-video{padding-bottom: 280px; overflow: auto;}
+#intro-video{/*padding-bottom: 280px; */ overflow: auto;}
 #intro-video video{width: 202px; margin: 0 auto;}
 
 #shake-it-again-text{display: none;}
+#shake-it-again-text img{width: 121px; height: auto;}
 
+#shake-it-text img{ width: 115px; height: auto;}
+
+
+
+.click-to-call{text-align: center!important;}
+.click-to-call a{display: inline!important; color: #000; text-decoration: underline;}
 /*******************************************************************
 
                 5 - menu
 
 *******************************************************************/
 #mypanel{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.91);
   width: 100%;
   height: 100%;
   font-family: "LVLight";
@@ -360,16 +446,26 @@ body.look {background: #FFF!important;}
   height: 100%;
 }
 .img-panel{
-  width: 5%!important;
   margin: 0 auto;
 }
 #cross-panel{
-  width: 100%;
-  margin: 5% 0;
-  text-align: center;
+  width: 50px;
+  margin: 0;
+  text-align: right;
   display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0 18px 0;
 }
-
+#mypanel #cross-panel img.img-panel{
+  display: inline-block;
+  margin: 0;
+}
+#mypanel .logo-panel{
+  width: 35px;
+  margin : 10px auto;
+}
 #nav-panel, #footer-panel {
   text-transform: uppercase;
   font-size: 12px;
@@ -379,18 +475,27 @@ body.look {background: #FFF!important;}
 
 }
 #nav-panel li {
-border-top: 2px solid #171716;
-padding-top:10px; 
-padding-bottom:10px;
+border-top: 1px solid #171716;
+/*padding-top:10px; 
+padding-bottom:10px;*/
+position: relative;
+height:38px;
+line-height: 45px;
 }
 
 #nav-panel li a {
   text-decoration: none;
   color: white;
+  width: 100%;
+  float: left;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top:0;
 }
 #nav-panel li:active {
-border-left: 2px solid #e70010;
-border-right: 2px solid #e70010;
+border-left: 1px solid #e70010;
+border-right: 1px solid #e70010;
 }
 #nav-panel .left{
   margin-left: 15%;
@@ -405,7 +510,7 @@ border-right: 2px solid #e70010;
   bottom: 5%;
   position: absolute;
   width: 100%;
-  border-top: 2px solid #171716;
+  border-top: 1px solid #171716;
   padding-top: 5%;
   left: 0;
 }
@@ -413,16 +518,31 @@ border-right: 2px solid #e70010;
   display: inline;
   margin: 0 auto;
   padding: 5% 10% ;
+  position: relative;
   }
 #footer-panel li a{
-  padding: 5% 0 ;  
+  /*padding: 5% 0;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0;
 }
   #footer-panel li:nth-child(2){
-    border-left: 2px solid #171716;
-    border-right: 2px solid #171716;
+    border-left: 1px solid #171716;
+    border-right: 1px solid #171716;
   }
 
+  #mypanel img{
+    width: 20px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
+.layer-step5{background: url(../images/layer.png) no-repeat center top; background-size: 100% auto; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000000; display: none; }
 /*******************************************************************
 
                 6 - invitation
@@ -432,7 +552,7 @@ border-right: 2px solid #e70010;
 .invit {
   width: 90%;
   text-align: center;
-  margin: 5% auto 2% auto ;
+  margin: 10% auto 2% auto ;
   line-height: 1.3em;
   font-size: 90%;
 }
@@ -484,7 +604,7 @@ input[type='submit']{
 .invitation-body .ui-btn,
 .confirmation .ui-btn{
   background-color: #000;
-  border:2px solid #636363;
+  border:1px solid #636363;
   color: white;
   width: 54%;
   line-height: 20px;
@@ -493,9 +613,15 @@ input[type='submit']{
   padding: 3% 0;
 }
 
+.invitation-body .ui-btn:hover,
+.confirmation .ui-btn:hover{
+  color: #000;
+  background: #636363;
+}
+
 
 #guest{overflow: auto;}
-#guest .img-invitation{width: 100%; height: auto;}
+#guest .img-invitation{width: 100%; height: auto; margin-bottom: 40px;}
 
 #form-invitation #message-error{display: none; padding-top: 20px;}
 
@@ -503,11 +629,14 @@ input[type='submit']{
 #loader-video{position: fixed; background: rgba(0,0,0,0.5) url('../images/loader.gif') center center no-repeat; top: 0; left: 0; width: 100%; height: 100%; display: none;}
 
 
+.btn-invitation{ width: 100%; height: 38px; margin: -80px 0 0 0; position: relative; z-index: 2; float: left; display: inline-block; text-align: center; background: black; }
+.btn-invitation .btn{text-align: center; display: inline-block; width: 45%; margin: 0 ;}
 
+.invite_ticket{ margin: -79px 0 0 0; float: left; display: inline-block; }
 
-
-
-
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left{
+  left:21em;
+}
 
 @media (orientation: landscape) {
 /*  .container,
@@ -528,8 +657,8 @@ input[type='submit']{
   font-size: 14px;
   }
   #nav-panel li {
-  padding-top:20px; 
-  padding-bottom:15px;
+  /*padding-top:15px; 
+  padding-bottom:10px;*/
   }
   #footer-panel{
     padding-top: 11%;
@@ -542,8 +671,7 @@ input[type='submit']{
 }
 
 @media screen and (max-width: 320px){
-  #ot{
-   display: none!important;}
+
   #scene{
     position: absolute;
     top: -20px;
@@ -554,12 +682,25 @@ input[type='submit']{
   }
 }
 
+@media screen and (max-width: 320px){
+  .content-slide h2{font-size:  35px; }
+}
+
+
 @media screen and (max-height: 480px){
   .home h2 img, .video h2 img{width: 55%; }
   .home h1 img; .video h1 img{width: 15%; margin: 0 auto; }
 
   .header-home{margin-top: 5%;}
 }
+
+@media screen and (min-height: 560px){
+  #scene{top: 20px;}
+}
+
+
+
+
 
 /* 3.24 */
 .shareimg{
@@ -569,3 +710,15 @@ input[type='submit']{
   opacity: 0;
   z-index: -1;
 }
+
+
+
+
+
+
+
+
+
+
+
+

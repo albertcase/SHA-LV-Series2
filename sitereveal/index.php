@@ -1,3 +1,21 @@
+<?php
+//--start
+require_once 'lib/Mobile-Detect-master/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+if($deviceType == "computer"){
+	//PC redirect
+	$_GET['hmsr'] = isset($_GET['hmsr']) ? "PC-" . $_GET['hmsr'] : "";
+	if($_GET['hmsr']==""){
+		header("Location: /pc/");
+		exit;
+	}
+	header("Location: /pc/?".http_build_query($_GET));
+	exit;
+}
+//--end
+?>
 <?php include("php/teaser.php"); ?><!DOCTYPE html>
 <html>
 <head>

@@ -162,7 +162,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "sitereveal/video.php"]);
+_hmt.push(['_trackPageview', "video.php"]);
 </script>
 </body>
 </html>

@@ -36,7 +36,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "sitereveal/index.php"]);
+_hmt.push(['_trackPageview', "index.php"]);
 </script>
 </body>
 

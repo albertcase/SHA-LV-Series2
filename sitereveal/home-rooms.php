@@ -50,7 +50,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "sitereveal/home-rooms.php"]);
+_hmt.push(['_trackPageview', "home-rooms.php"]);
 </script>
 </body>
 </html>

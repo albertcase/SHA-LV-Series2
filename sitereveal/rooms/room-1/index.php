@@ -39,6 +39,15 @@ body{background: #000;}
         <li class="layer" id="ot" data-depth="0.00"><img src="../../images/logo-lv/Sans-titre7.png"></li>
     </ul>
 
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?df4334f8d06255e9fd82b07d21c47e3c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+_hmt.push(['_trackPageview', "rooms/room-1.php"]);
+</script>
 </body>
 </html>

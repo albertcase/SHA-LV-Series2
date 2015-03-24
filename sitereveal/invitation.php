@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "sitereveal/invitation.php"]);
+_hmt.push(['_trackPageview', "invitation.php"]);
 </script>
 </body>
 

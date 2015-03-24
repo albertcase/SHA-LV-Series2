@@ -185,7 +185,7 @@ html{
 }
 #img-btn-panel{
   width:30px;
-  margin:10px;
+  margin:10px 27px 27px 10px;
   z-index: 100;
   position: relative;
 }

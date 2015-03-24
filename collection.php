@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Louis Vuitton</title>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>
 	<script src="js/lib/swipe/jquery.touchSwipe.min.js"></script>
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>

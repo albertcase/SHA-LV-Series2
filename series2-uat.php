@@ -43,7 +43,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "series2-uat"]);
+_hmt.push(['_trackPageview', "series2-uat.php"]);
 </script>
 </body>
 

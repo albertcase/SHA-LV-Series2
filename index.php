@@ -16,7 +16,11 @@ if($deviceType == "computer"){
 }
 //--end
 ?>
-<?php include("php/teaser.php"); ?><!DOCTYPE html>
+<?php
+	$videos = array('/media/series2/opening.mp4');
+	$videoindex = array_rand($videos);
+	$myvideo = $videos[$videoindex];
+?>
 <html>
 <head>
 	<meta charset="UTF-8">

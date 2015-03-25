@@ -48,7 +48,14 @@
             window.scrollTo(1, 1);
         });
     </script>
-
+<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+</style>
 </head>
 	<body>
 <img src="/images/share.jpg" class="shareimg" />

@@ -11,7 +11,7 @@ if(isset($_SESSION['sharestatus'])){
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
+	<title>路易威登“系列二”线上展览&nbsp;点击进入&nbsp;体验创新数字之旅</title>
 	<link rel="stylesheet" href="css/jquery-mobile.css" /> 
 	<script src="js/lib/jquery/jquery.min.js"></script>
 	<script src="js/lib/jquery/jquery.mobile-1.4.5.js"></script>

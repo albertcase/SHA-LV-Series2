@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>Louis Vuitton</title>
+<title>路易威登“系列二”线上展览&nbsp;点击进入&nbsp;体验创新数字之旅</title>
 <style type="text/css">
 
 body{background: #000;}

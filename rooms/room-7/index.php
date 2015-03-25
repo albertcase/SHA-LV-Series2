@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   	<meta charset="utf-8">
-  	<title>Louis Vuitton</title>
+  	<title>路易威登“系列二”线上展览&nbsp;点击进入&nbsp;体验创新数字之旅</title>
   	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../../css/rooms.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">

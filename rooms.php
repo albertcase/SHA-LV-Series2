@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>Louis Vuitton</title>
+	<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
 	<meta name="author" content="" />
 	<meta name="description" content="" />
 	<meta name="keywords"  content="" />

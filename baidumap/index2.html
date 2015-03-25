@@ -88,10 +88,33 @@
 
 	</style>
 	<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
+<script type="text/javascript" src="../js/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?ak=Z5FOXZbjH3AEIukiiRTtD7Xy&v=2.0"></script>
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script type="text/javascript">
+// 百度地图API功能
+	getLocation()
+	function getLocation(){
+    if(navigator.geolocation){
+       navigator.geolocation.getCurrentPosition(showPosition);
+      }else{
+       alert("您的浏览器不支持地理定位");
+      }
+   }
+	function showPosition(position){
+		var lat=position.coords.latitude;
+    	var lon=position.coords.longitude;
+    	var gpsPoint = new BMap.Point(lon,lat);
+    	BMap.Convertor.translate(gpsPoint,0,translateCallback);
+	}
+	function translateCallback(point){
+		$("#iframe").attr("src" ,"gps2.html?lng=" + point.lng + "&lat=" + point.lat);
+	}
+</script>
 </head>
 <body>
 	<img src="/images/share.jpg" class="shareimg" />
-	<iframe id="iframe" src="web.html"></iframe>
+	<iframe id="iframe" src=""></iframe>
 	<div class="topic">
 		<img src="images/series2.png" width="30%">
 	</div>
@@ -99,6 +122,7 @@
 				<a href="../confirmation.php?invite=1" class="btn" id="save-wechat" data-ajax="false">返 回</a>
 	</div>
 <script>
+//http://api.map.baidu.com/marker?location=39.915168,116.464285&title=路易威登之家&content=北京市朝阳区建国门外大街一号国贸西楼&output=html&src=随便取
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -106,7 +130,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "baidumap/index.html"]);
+_hmt.push(['_trackPageview', "baidumap/index2.html"]);
 </script>
 </body>
 </html>

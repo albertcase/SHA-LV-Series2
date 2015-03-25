@@ -18,7 +18,7 @@ if(isset($_GET["invite"])){
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Louis Vuitton</title>
+<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -33,7 +33,18 @@ if(isset($_GET["invite"])){
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="home confirmation">
-	<img src="/images/share.jpg" class="shareimg" />
+
+<div id="handTips">
+ <div class="hand-action">
+    <div class="hc1 hc"></div>
+    <div class="hc2 hc"></div>
+    <div class="hand-img"></div>
+    <div class="tip2">长按图片<br />保存到相册</div> 
+ </div>
+</div>
+
+<img src="/images/share.jpg" class="shareimg" />
+
 	<div data-role="page" id="guest">
 			<?php include'menu.php';?>
 			<a class="invite_ticket" href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" data-ajax="false"><img src="/ws/<?php echo $img;?>" class="img-invitation"></a>
@@ -42,6 +53,15 @@ if(isset($_GET["invite"])){
 				<!--<a href="php/down.php?type=jpg&fic=<?php echo urlencode("/ws/".$img);?>" download="einvitations.jpg" class="btn" id="save-wechat" data-ajax="false">长按保存</a>-->
 			</div>
 	</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	function handTips(){
+		$("#handTips").remove();
+	}
+
+	setTimeout(handTips,3000);
+})
+</script>
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -53,7 +73,7 @@ var _hmt = _hmt || [];
 _hmt.push(['_trackPageview', "confirmation.php"]);
 </script>
 <script>
-	window.history.pushState( {} , '/', '/' );
+//	window.history.pushState( {} , '/', '/' );
 </script>
 
 </body>

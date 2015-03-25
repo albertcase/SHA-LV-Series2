@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Louis Vuitton</title>
+<title>路易威登“系列二”线上展览，点击进入，体验创新数字之旅</title>
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -14,11 +14,9 @@
 <script src="js/lib/jquery/jquery.validate.min.js"></script>	
 <script type="text/javascript" src="js/script.js"></script>
 
-
-
-
 </head>
 <body class="home invitation-body">
+
 	<img src="/images/share.jpg" class="shareimg" />
 	<div data-role="page" id="guest">
 		<?php include'menu.php';?>
@@ -47,15 +45,16 @@
 
 	<script type="text/javascript">
 $(document).ready(function() {
-    	$("input[type=submit]").click(function(e) {
-    		var name = $("#name").val();
-			var phone = $("#phone").val();
-			if (name == '') {
-	    		e.preventDefault();
-	    		$("#message-error").show();
-			}
-    	});
-    });
+	$("input[type=submit]").click(function(e) {
+		var name = $("#name").val();
+		var phone = $("#phone").val();
+		if (name == '') {
+    		e.preventDefault();
+    		$("#message-error").show();
+		}
+	});
+});
+
 </script>
 <script>
 var _hmt = _hmt || [];

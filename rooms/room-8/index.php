@@ -38,7 +38,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-_hmt.push(['_trackPageview', "rooms/room-8.php"]);
+_hmt.push(['_trackPageview', "rooms/room-8/index.php"]);
 </script>
 </body>
 </html>

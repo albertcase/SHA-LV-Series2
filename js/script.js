@@ -23,7 +23,7 @@
 
 		$('.btn-play.open').click(function() {
 			var rightPart = $(this).parents(".ms-section").attr("data-right");
-			console.log(rightPart);
+			//console.log(rightPart);
 			$(".content-slide").animate({opacity: "0"}, 5);
 			$(this).parents(".content-slide").animate({opacity: "0"}, 5);
 			$('.ms-left ').animate({left: "-50%"}, 500);
@@ -41,7 +41,7 @@
 		$('.btn-play.video').click(function() {
 			var link = $(this).attr("data-link");
 			var data_id = $(this).attr("data-id");
-			$(this).append("<video width='400' height='222' controls='controls' id='"+data_id+"'><source src='"+link+"' type='video/mp4' /></video>");
+			$(this).html("").append("<video width='400' height='222' controls='controls' id='"+data_id+"'><source src='"+link+"' type='video/mp4' /></video>");
 			$('#'+data_id+'').get(0).play();
 			//document.location.href=link;
 

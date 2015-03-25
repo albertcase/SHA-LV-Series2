@@ -20,7 +20,7 @@
 <body>
 	<img src="/images/share.jpg" class="shareimg" />
 	<div id="container" class="container">
-		<div id="back"> <a href="../../rooms.php#nine"></a></div>
+		<div id="back" class="black"> <a href="../../rooms.php#nine"></a></div>
 		<div>
 		<ul id="scene" class="scene">
 			<li class="layer" data-depth="8.00"><img src="images/sticker01.png" ></li>

@@ -124,7 +124,7 @@
 					<div class="content-slide">
 						<h1>Space 7</h1>
 						<h2>后台</h2>
-						<div class="btn-play open" data-link="rooms/room-7/index.php#backstage-image2"></div>
+						<div class="btn-play open" data-link="rooms/room-7/index.php#backstage-image1"></div>
 					</div>
 				</div>
 				<div class="ms-section" id="left8" data-right="right8">

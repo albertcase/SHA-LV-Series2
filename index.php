@@ -4,7 +4,7 @@ require_once 'lib/Mobile-Detect-master/Mobile_Detect.php';
 $detect = new Mobile_Detect;
 
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-if($deviceType == "computer"){
+if($deviceType == 'computer'){
 	//PC redirect
 	$_GET['hmsr'] = isset($_GET['hmsr']) ? "PC-" . $_GET['hmsr'] : "";
 	if($_GET['hmsr']==""){
@@ -12,6 +12,16 @@ if($deviceType == "computer"){
 		exit;
 	}
 	header("Location: /pc/?".http_build_query($_GET));
+	exit;
+}
+if($deviceType == 'tablet'){
+	//PC redirect
+	$_GET['hmsr'] = isset($_GET['hmsr']) ? "PAD-" . $_GET['hmsr'] : "";
+	if($_GET['hmsr']==""){
+		header("Location: /pad/");
+		exit;
+	}
+	header("Location: /pad/?".http_build_query($_GET));
 	exit;
 }
 //--end

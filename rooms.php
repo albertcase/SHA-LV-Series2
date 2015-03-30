@@ -48,7 +48,14 @@
             window.scrollTo(1, 1);
         });
     </script>
-
+<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+</style>
 </head>
 	<body>
 <img src="/images/share.jpg" class="shareimg" />
@@ -117,7 +124,7 @@
 					<div class="content-slide">
 						<h1>Space 7</h1>
 						<h2>后台</h2>
-						<div class="btn-play open" data-link="rooms/room-7/index.php#backstage-image2"></div>
+						<div class="btn-play open" data-link="rooms/room-7/index.php#backstage-image1"></div>
 					</div>
 				</div>
 				<div class="ms-section" id="left8" data-right="right8">

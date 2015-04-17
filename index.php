@@ -46,7 +46,7 @@
 		        //Generic swipe handler for all directions
 		        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 		          if(direction == "up"){
-		          		$.mobile.changePage("index.php#grid-collection" , {transition: "slideup", pageContainer:"#intro"}); 
+		          		$.mobile.changePage("/#grid-collection" , {transition: "slideup", pageContainer:"#intro"}); 
 						event.stopImmediatePropagation();   
 		          }
 		        }

@@ -51,7 +51,7 @@ $p_max=48;
 		<?php } ?>
 		<p><?php echo "".$look->description;?></p>
 
-		<p class="click-to-call"><a href="/saosao.html">预约到店</a><br/>路易威登客服中心：<a href="tel:4006588555">4006588555</a></p>
+		<p class="click-to-call"><a href="/saosao.html">预约到店</a><br/><br/>路易威登客服中心：<a href="tel:4006588555">4006588555</a></p>
 
 	</section>
 	<script>

@@ -32,13 +32,13 @@
 		<?php include'menu.php';?>
 
 		<div id="introduction-collection">
-			<h1>全部造型</h1>
+			
 		</div>
-		<div class="btn-home">
+		<!-- <div class="btn-home">
 			<span data-transition="slideup">
 				<img src="images/btn-home2.png" class="img-btn">
 			</span>
-		</div>
+		</div> -->
 
 		<script>
 			$(function() {      

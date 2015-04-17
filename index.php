@@ -34,11 +34,11 @@
 		<div id="introduction-collection">
 			
 		</div>
-		<!-- <div class="btn-home">
+		<div class="btn-home">
 			<span data-transition="slideup">
 				<img src="images/btn-home2.png" class="img-btn">
 			</span>
-		</div> -->
+		</div>
 
 		<script>
 			$(function() {      

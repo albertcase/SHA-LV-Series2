@@ -27,7 +27,7 @@ if($deviceType == 'tablet'){
 //--end
 ?>
 <?php
-	$videos = array('/media/series2/opening.mp4');
+	$videos = array('/media/series2/opening2.mp4');
 	$videoindex = array_rand($videos);
 	$myvideo = $videos[$videoindex];
 ?>

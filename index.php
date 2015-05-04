@@ -31,7 +31,6 @@ if($deviceType == 'tablet'){
     $videoindex = array_rand($videos);
     $myvideo = $videos[$videoindex];
 ?>
-
 <!DOCTYPE html> 
 <html>
 <head>

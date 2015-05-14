@@ -53,7 +53,7 @@ $p_max=48;
 
 
 	</section>
-	<p class="click-to-call"><a href="/saosao.html">预约到店</a><br/><br/>路易威登客服中心：<a href="tel:4006588555">4006588555</a></p>
+	<p class="click-to-call"><a href="/saosao.html" target="_blank">预约到店</a><br/><br/>路易威登客服中心：<a href="tel:4006588555">4006588555</a></p>
 	<script>
 	$(function(){
 		$( document ).on( "pageinit", "#look-detail", function() {

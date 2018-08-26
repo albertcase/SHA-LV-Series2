@@ -1,5 +1,8 @@
 # Ignore configuration files that may contain sensitive information.
 .DS_Store
 .vagrant
+.phpintel
 ws/upload
 media/
+video/ws/upload
+video/ws/videos_generate

@@ -2,32 +2,34 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+ 
+  config.vm.box = "ubuntu16.04-20170208"
+  config.vm.hostname = "ubuntu16.04"
 
-  config.vm.box = "ubuntu12.04-givenchy-beauty"
+  
+  config.vm.network :forwarded_port, guest: 80, host: 9222
+  config.vm.network :forwarded_port, guest: 3306, host: 33222
+  config.vm.network :forwarded_port, guest: 6379, host: 63792
+  config.vm.network :forwarded_port, guest: 27017, host: 37012
 
-  config.vm.hostname = "LV-Series2"
+  
+  config.vm.network :private_network, ip: "192.168.33.10"
 
-  config.vm.network :forwarded_port, guest: 80, host: 9002
-  config.vm.network :forwarded_port, guest: 3306, host: 33092
-
-  config.ssh.username = "vagrant"
-  config.ssh.password = "vagrant"
-
-  config.vm.network :private_network, ip: "192.168.33.8"
-
-  config.vm.synced_folder "./", "/vagrant", :nfs => true
+  config.vm.synced_folder "./", "/vagrant", :nfs => true 
 
   config.vm.provider :virtualbox do |vb|
+  #   # Don't boot with headless mode
+  #   vb.gui = true
+  #
+  #   # Use VBoxManage to customize the VM. For example to change memory:
     vb.customize ["modifyvm", :id, "--memory", "1024"]
-    #vb.gui = true
   end
+  #
 
-  #config.vm.provision :puppet do |puppet|
-  #  puppet.module_path = "puppet/modules"
-  #  puppet.manifests_path = "puppet/manifests"
-  #  puppet.manifest_file  = "site.pp"
-  #end
-
-  #config.vm.provision :shell, :path => "var/init-env.sh"
+  config.vm.provision :puppet do |puppet|
+    puppet.module_path = "puppet/modules"
+    puppet.manifests_path = "puppet/manifests"
+    puppet.manifest_file  = "site.pp"
+  end
 
 end

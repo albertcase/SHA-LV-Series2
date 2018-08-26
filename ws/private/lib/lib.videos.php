@@ -20,11 +20,11 @@ class videos  {
 	// Class constructor, instanciate BDD
 	/********************************************************/
 
-	public function videos() {
+	public function __construct() {
 		global $dbConnect;
 		$this->dbConnect = $dbConnect;
 	}
-	
+
 	public function saveImageAndMakeFilter($fichier,$numimage,$orientation=0){
 			
 			//Stockage by date for not reach the directory file max 
@@ -149,7 +149,7 @@ class videos  {
 		imagedestroy($thumb);
 	}
 	
-	public function makeVideo($user_key,$image_1_filter,$image_2_filter,$image_3_filter,$id_video_1,$id_video_1,$id_video_1,$id_video_1){
+	public function makeVideo($user_key,$image_1_filter,$image_2_filter,$image_3_filter){
 
 		$URL = _service_video_."make_videos.php";
 		$fields = array(

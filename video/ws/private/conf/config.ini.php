@@ -1,8 +1,5 @@
 <?php
-//error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
-define("_max_upload_size_","8048000");
-ini_set("upload_max_filesize",_max_upload_size_); 
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 //anti XSS
 foreach($_POST as $k => $v) {  
@@ -33,23 +30,9 @@ foreach($_REQUEST as $k => $v) {
 $_REQUEST=$_myarray;
 
 
+define("_ffmpeg_path_","/usr/local/bin/ffmpeg");
+define("_front_http_","http://127.0.0.1");
 
-/**********************************************/
-// Variables BDD							  //
-//********************************************//
-define("_dbhost_","127.0.0.1");
-define("_dbname_","lvseries");
-define("_dbuser_","root");
-define("_dbpassword_", ""); 
-define("_dbport_", "");
-define("_service_video_", 'http://127.0.0.1/video/ws/');
-
-define("_res_par_page_backo_", "10");
-
-
-$expediteur_email="contact@lv.com";
-$expediteur_name="LV";
-$sujet_email_validate ="Sujet Mail";
 
 date_default_timezone_set("Europe/Paris");
 
@@ -58,8 +41,5 @@ session_start();
 function __autoload($class_name) {
     if(file_exists(dirname(__FILE__)."/../lib/lib.".$class_name . '.php')) require_once dirname(__FILE__)."/../lib/lib.".$class_name . '.php';
 }
-
-$dbConnect = new bdd_connect();
-
 
 ?>

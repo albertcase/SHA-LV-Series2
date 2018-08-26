@@ -11,7 +11,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=1024" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="/js/lib/jquery/jquery.min.js"></script>
      </head>
     
 <body>
